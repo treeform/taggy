@@ -1,7 +1,3 @@
-# You can use this nim template to jump start your nim library or project.
+## Taggy - HTML DOM generator for Nim's JS mode.
 
-This template includes:
-* MIT licence
-* src directory and a private common.nim
-* test directory
-* GitHub Actions to run the tests on GitHub
+Simple HTML DOM generator for JS mode. Great for non-reactive data heavy html pages.
