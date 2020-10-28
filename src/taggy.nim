@@ -4,6 +4,7 @@ var
   tagStack: seq[Node]           ## Nodes stack to know the parent nodes.
   lastNode: Node                ## Last node to be returned by generate.
   tagName: cstring              ## Current tag name.
+  thisNode*: Node
   event*: Event                 ## Current global event used in event handlers.
 
 template generate*(body: untyped): Node =
@@ -14,19 +15,30 @@ template generate*(body: untyped): Node =
   assert tagStack.len == 0
   lastNode
 
+template add*(parent: Node, body: untyped) =
+  ## Call this with taggy functions inside to get an HTML node back.
+  ## This node can be attached to document.body or anywhere else.
+  lastNode = nil
+  body
+  assert tagStack.len == 0
+  parent.appendChild(lastNode)
+  lastNode = nil
+
 proc addNode(node: Node) =
   ## Adds a node to the tags.
   if tagStack.len > 0:
     tagStack[^1].appendChild(node)
 
 proc openTag(name: cstring) =
-  tagName = name
   let node = document.createElement(name)
+  tagName = name
+  thisNode = node
   addNode(node)
   tagStack.add(node)
 
 proc closeTag() =
   tagName = nil
+  thisNode = nil
   lastNode = tagStack.pop()
 
 proc text*(s: cstring) =
@@ -301,11 +313,11 @@ proc wrap*(s: cstring) = setAttribute("wrap", s); allowedOnTag(["textarea"]) ## 
 
 template onEvent*(name: cstring, body: untyped) =
   ## Sets a generic on event handler.
-  proc `"handler" name`(thisEvent: Event) =
+  proc tmp(thisEvent: Event) {.gensym.} =
     event = thisEvent
     body
     event = nil
-  tagStack[^1].addEventListener(name, `"handler" name`)
+  tagStack[^1].addEventListener(name, tmp)
 
 template onAbort*(body: untyped) = onEvent("abort", body) ## The loading of a media is aborted.
 template onAfterPrint*(body: untyped) = onEvent("afterprint", body) ## A page has started printing, or if the print dialogue box has been closed.
@@ -612,3 +624,11 @@ proc maxHeight*(s: SomeNumber) = setStyle("maxHeight", $s & "px") ## The maximum
 proc maxWidth*(s: SomeNumber) = setStyle("maxWidth", $s & "px") ## The maximum width of an element.
 proc minHeight*(s: SomeNumber) = setStyle("minHeight", $s & "px") ## The minimum height of an element.
 proc minWidth*(s: SomeNumber) = setStyle("minWidth", $s & "px") ## The minimum width of an element.
+
+# CSS Generation
+
+proc addCSSText*(css: string) =
+  var style = document.createElement("style");
+  style.setAttribute("type", "text/css");
+  style.innerHTML = css
+  document.head.appendChild(style)
