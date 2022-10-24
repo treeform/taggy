@@ -1,3 +1,12 @@
-## Taggy - HTML DOM generator for Nim's JS mode.
+# Taggy - Everything you want to to do xml or html <tags>.
 
-Simple HTML DOM generator for JS mode. Great for non-reactive data heavy html pages.
+## Static HTML Generator
+
+
+## Static CSS Generator
+
+
+## HTML Parser
+
+
+## XML Parser
