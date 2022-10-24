@@ -159,6 +159,7 @@ proc fontVariantLigatures*(value: string) = cssProp "font-variant-ligatures", va
 proc fontVariantNumeric*(value: string) = cssProp "font-variant-numeric", value
 proc fontVariantPosition*(value: string) = cssProp "font-variant-position", value
 proc fontWeight*(value: string) = cssProp "font-weight", value
+proc fontWeight*(value: SomeNumber) = cssProp "font-weight", $value
 proc gap*(value: string) = cssProp "gap", value
 proc grid*(value: string) = cssProp "grid", value
 proc gridArea*(value: string) = cssProp "grid-area", value
@@ -197,8 +198,10 @@ proc listStyle*(value: string) = cssProp "list-style", value
 proc listStyleImage*(value: string) = cssProp "list-style-image", value
 proc listStylePosition*(value: string) = cssProp "list-style-position", value
 proc listStyleType*(value: string) = cssProp "list-style-type", value
-proc margin*(value: string) = cssProp "margin", value
 
+proc margin*(value: string) = cssProp "margin", value
+proc margin*(vertical, horizontal: SomeNumber) = cssProp "margin", $vertical & "px " & $horizontal & "px"
+proc margin*(top, right, bottom, left: SomeNumber) = cssProp "margin", $top & "px " & $right & "px " & $bottom & "px " & $left & "px"
 proc marginBottom*(value: string) = cssProp "margin-bottom", value
 proc marginBottom*(value: SomeNumber) = cssProp "margin-bottom", $value & "px"
 proc marginLeft*(value: string) = cssProp "margin-left", value
@@ -241,18 +244,17 @@ proc overflow*(value: string) = cssProp "overflow", value
 proc overflowWrap*(value: string) = cssProp "overflow-wrap", value
 proc overflowX*(value: string) = cssProp "overflow-x", value
 proc overflowY*(value: string) = cssProp "overflow-y", value
+
 proc padding*(value: string) = cssProp "padding", value
 proc padding*(value: SomeNumber) = cssProp "padding", $value & "px"
-
+proc padding*(vertical, horizontal: SomeNumber) = cssProp "padding", $vertical & "px " & $horizontal & "px"
+proc padding*(top, right, bottom, left: SomeNumber) = cssProp "padding", $top & "px " & $right & "px " & $bottom & "px " & $left & "px"
 proc paddingBottom*(value: string) = cssProp "padding-bottom", value
 proc paddingBottom*(value: SomeNumber) = cssProp "padding-bottom", $value & "px"
-
 proc paddingLeft*(value: string) = cssProp "padding-left", value
 proc paddingLeft*(value: SomeNumber) = cssProp "padding-left", $value & "px"
-
 proc paddingRight*(value: string) = cssProp "padding-right", value
 proc paddingRight*(value: SomeNumber) = cssProp "padding-right", $value & "px"
-
 proc paddingTop*(value: string) = cssProp "padding-top", value
 proc paddingTop*(value: SomeNumber) = cssProp "padding-top", $value & "px"
 
