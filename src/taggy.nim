@@ -651,6 +651,7 @@ proc readonly*(value: string) = attr "readonly", value
 proc rel*(value: string) = attr "rel", value
 proc required*(value: string) = attr "required", value
 proc reversed*(value: string) = attr "reversed", value
+proc role*(value: string) = attr "role", value
 proc rows*(value: string) = attr "rows", value
 proc rowspan*(value: string) = attr "rowspan", value
 proc sandbox*(value: string) = attr "sandbox", value
