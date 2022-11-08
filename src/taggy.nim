@@ -755,3 +755,10 @@ template render*(inner): string =
   let r = sayStack[0]
   sayStack[0] = ""
   "<!DOCTYPE html>" & r
+
+template renderFragment*(inner): string =
+  inner
+  assert sayStack.len == 1
+  let r = sayStack[0]
+  sayStack[0] = ""
+  r
