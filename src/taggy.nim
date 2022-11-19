@@ -677,6 +677,7 @@ proc usemap*(value: string) = attr "usemap", value
 proc value*(value: string) = attr "value", value
 proc attrWidth*(value: string) = attr "width", value
 proc wrap*(value: string) = attr "wrap", value
+proc crossOrigin*(value: string) = attr "crossOrigin", value
 
 proc onabort*(value: string) = attr "onabort", value
 proc onafterprint*(value: string) = attr "onafterprint", value
