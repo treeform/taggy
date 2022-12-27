@@ -79,10 +79,10 @@ proc eat(p: ParseCtx, c: char) =
 proc next(p: ParseCtx, c: char): bool =
   p.at == c
 
-proc next(p: ParseCtx, s: string, caseInsentive = false): bool =
+proc next(p: ParseCtx, s: string, caseIncentive = false): bool =
   if p.i + s.len > p.s.len:
     return false
-  if caseInsentive:
+  if caseIncentive:
     p.s[p.i ..< p.i + s.len].toLowerAscii() == s.toLowerAscii()
   else:
     p.s[p.i ..< p.i + s.len] == s
@@ -126,15 +126,6 @@ proc readQuoteOrWord(p: ParseCtx): string =
   else:
     p.readWord()
 
-proc parseSpecial(p: ParseCtx) =
-  if p.next("<!DOCTYPE", caseInsentive=true):
-    p.eat("<!DOCTYPE")
-    p.eatWhiteSpace()
-    discard p.readWord()
-    p.eatWhiteSpace()
-    p.eat(">")
-    p.eatWhiteSpace()
-
 proc parseAttribute(p: ParseCtx): (string, string) =
   let key = p.readWord()
   p.eatWhiteSpace()
@@ -144,17 +135,44 @@ proc parseAttribute(p: ParseCtx): (string, string) =
   p.eatWhiteSpace()
   return (key, value)
 
+proc parseSpecial(p: ParseCtx) =
+  if p.next("<!DOCTYPE", caseIncentive=true):
+    p.eat("<!DOCTYPE")
+    p.eatWhiteSpace()
+    discard p.readWord()
+    p.eatWhiteSpace()
+    p.eat(">")
+    p.eatWhiteSpace()
+
+proc parseXMLDeclaration(p: ParseCtx): Element =
+  if p.next("<?xml", caseIncentive=true):
+    result = Element()
+    result.tagName = "?xml"
+    p.eat("<?xml")
+    p.eatWhiteSpace()
+    while not p.next("?>"):
+      result.attributes.add p.parseAttribute()
+    p.eat("?>")
+    p.eatWhiteSpace()
+
 proc parseElementHead(p: ParseCtx): Element =
   result = Element()
 
   while p.next("<!"):
     p.parseSpecial()
 
+  while p.next("<?"):
+    discard p.parseXMLDeclaration()
+
   p.eat('<')
   p.eatWhiteSpace()
   result.tagName = p.readWord()
   p.eatWhiteSpace()
-  while p.hasMore and not p.next('>'):
+  while p.hasMore:
+    if p.next('>'):
+      break
+    if p.next('/'):
+      return
     result.attributes.add p.parseAttribute()
   p.eat('>')
 
@@ -163,6 +181,10 @@ proc parseXmlElement(p: ParseCtx): Element =
 
   var text: string
   while p.hasMore:
+    if p.next("/>"):
+      # self closing
+      p.eat("/>")
+      return
     if p.next('<'):
       if text != "":
         result.children.add Element(content: text)
@@ -202,11 +224,14 @@ proc `$`*(e: Element): string =
       result.add v
       result.add "\""
 
-    result.add '>'
+    if e.children.len == 0:
+       result.add "/>"
+    else:
+      result.add '>'
 
-    for c in e.children:
-      result.add $c
+      for c in e.children:
+        result.add $c
 
-    result.add "</"
-    result.add e.tagName
-    result.add '>'
+      result.add "</"
+      result.add e.tagName
+      result.add '>'
