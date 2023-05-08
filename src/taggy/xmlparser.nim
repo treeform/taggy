@@ -224,14 +224,13 @@ proc `$`*(e: Element): string =
       result.add v
       result.add "\""
 
-    if e.children.len == 0:
-       result.add "/>"
-    else:
-      result.add '>'
+    # TODO: Self closing logic.
 
-      for c in e.children:
-        result.add $c
+    result.add '>'
 
-      result.add "</"
-      result.add e.tagName
-      result.add '>'
+    for c in e.children:
+      result.add $c
+
+    result.add "</"
+    result.add e.tagName
+    result.add '>'
