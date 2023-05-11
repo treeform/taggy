@@ -4,7 +4,7 @@
 
 ![Github Actions](https://github.com/treeform/taggy/workflows/Github%20Actions/badge.svg)
 
-[API reference](https://nimdocs.com/treeform/taggy)
+[API reference](https://treeform.github.io/taggy)
 
 This library has no dependencies other than the Nim standard library.
 
