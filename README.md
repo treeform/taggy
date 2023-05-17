@@ -8,6 +8,11 @@
 
 This library has no dependencies other than the Nim standard library.
 
+* HTML Parser/Serializer
+* XML Parser/Serializer
+* Static HTML Generator
+* Static CSS Generator
+
 ## Static HTML Generator
 
 
