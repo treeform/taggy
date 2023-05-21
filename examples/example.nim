@@ -42,3 +42,19 @@ x = render:
       css "&:last":
         marginRight 0
 echo x
+
+x = render:
+  html:
+    head:
+      title:
+        say "simple page"
+      styleSheet:
+        css "body":
+          backgroundColor "back"
+          color "white"
+    body:
+      h1:
+        say "This is a simple page"
+      p:
+        say "Taggly allows server and client site html generation"
+echo x

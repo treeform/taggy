@@ -320,7 +320,6 @@ proc zIndex*(value: SomeNumber) = cssProp "z-index", $value
 proc zoom*(value: string) = cssProp "zoom", value
 proc zoom*(value: SomeNumber) = cssProp "zoom", $value
 
-
 proc parseSelector(selector: string) =
   var
     isId = false
@@ -576,7 +575,7 @@ template wbr*(inner) = tag "", "wbr", inner
 template style*(inner) =
   cssStack = @[""]
   inner
-  tagStyle = cssStack[0].splitWhitespace().join(" ")
+  tagStyle = strutils.splitWhitespace(cssStack[0]).join(" ")
   attrsStack[^1].add " style=\"" & tagStyle & "\""
   cssStack = @[""]
 
