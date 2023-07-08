@@ -27,7 +27,7 @@ x = render:
         say "simple page"
       styleSheet:
         css "body":
-          backgroundColor "back"
+          backgroundColor "black"
           color "white"
     body:
       h1:

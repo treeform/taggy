@@ -10,7 +10,7 @@ type
     s*: string
     i*: int
 
-  Element = ref object
+  Element* = ref object
     content*: string
     tagName*: string
     attributes*: StringMap
