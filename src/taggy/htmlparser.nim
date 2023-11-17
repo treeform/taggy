@@ -1,4 +1,6 @@
-import taggy/xmlparser {.all.}
+import taggy/xmlparser {.all.}, taggy/entities
+
+export Element, `[]`, `[]=`
 
 const
   SelfClosingTags = [
@@ -67,6 +69,8 @@ proc `$`*(e: Element): string =
     result.add '>'
 
     if e.tagName notin SelfClosingTags:
+
+      result.add e.content.encodeHtmlEntities()
 
       for c in e.children:
         result.add $c
