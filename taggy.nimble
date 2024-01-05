@@ -1,4 +1,4 @@
-version     = "0.0.2"
+version     = "0.0.3"
 author      = "Andre von Houck"
 description = "HTML DOM generator for Nim's JS mode."
 license     = "MIT"
