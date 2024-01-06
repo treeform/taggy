@@ -2,6 +2,8 @@ import taggy/xmlparser {.all.}, taggy/entities
 
 export Element, `[]`, `[]=`
 
+export xmlparser except `$`
+
 const
   SelfClosingTags = [
     "area",

@@ -39,6 +39,19 @@ func contains*(query: var StringMap, key: string): bool =
     if pair[0] == key:
       return true
 
+proc `[]`*(e: Element, id: int): Element =
+  ## Get a child element by index.
+  e.children[id]
+
+proc add*(e: Element, child: Element) =
+  ## Adds a child element.
+  e.children.add child
+
+proc newElement*(tagName: string): Element =
+  ## Creates a new element.
+  result = Element()
+  result.tagName = tagName
+
 proc error(p: ParseCtx, msg: string) =
   var
     j = 0

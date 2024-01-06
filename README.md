@@ -17,6 +17,75 @@ This library has no dependencies other than the Nim standard library.
 * Static HTML Generator
 * Static CSS Generator
 
+## HTML Parser
+
+```nim
+let divElement = parseHtml("<div class='foo'><span><img src='img.png'></span></div>")
+echo divElement.attributes["class"]
+echo divElement[0][0].attributes["src"]
+```
+
+```sh
+foo
+img.png
+```
+
+## HTML Serializer
+
+```nim
+let divElement = newElement("div")
+divElement.attributes["class"] = "foo"
+let spanElement = newElement("span")
+let imgElement = newElement("img")
+imgElement.attributes["src"] = "img.png"
+spanElement.add(imgElement)
+divElement.add(spanElement)
+echo $divElement
+```
+
+```sh
+<div class="foo"><span><img src="img.png"></span></div>
+```
+
+## XML Parser
+
+```nim
+let xmlNode = parseXml("""<tag id="123" bar="the thing"><foo>here</foo><foo2></foo2></tag>""")
+echo xmlNode.attributes["id"]
+echo xmlNode.attributes["bar"]
+echo xmlNode[0].tagName
+echo xmlNode[0][0].content
+echo xmlNode[1].tagName
+```
+
+```sh
+123
+the thing
+foo
+here
+foo2
+```
+
+## XML Serializer
+
+```nim
+let xmlNode = newElement("tag")
+xmlNode.attributes["id"] = "123"
+xmlNode.attributes["bar"] = "the thing"
+let fooNode = newElement("foo")
+let text = Element()
+text.content = "here"
+fooNode.add(text)
+xmlNode.add(fooNode)
+let foo2Node = newElement("foo2")
+xmlNode.add(foo2Node)
+echo $xmlNode
+```
+
+```sh
+<tag id="123" bar="the thing"><foo>here</foo><foo2></foo2></tag>
+```
+
 ## Static HTML Generator
 
 ```nim
