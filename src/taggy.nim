@@ -5,12 +5,12 @@ proc escapeHtml*(s: string): string =
   xmltree.escape(s)
 
 var
-  sayStack = @[""]
-  attrsStack = @[""]
-  tagStyle: string
-  cssIdx: int
-  selectorStack: seq[string]
-  cssStack = @[""]
+  sayStack {.threadvar.}: seq[string] 
+  attrsStack {.threadvar.}: seq[string]
+  tagStyle {.threadvar.} : string
+  cssIdx {.threadvar.} : int
+  selectorStack {.threadvar.}: seq[string]
+  cssStack {.threadvar.}: seq[string]
 
 proc say*(s: string) =
   sayStack[^1].add(s)
@@ -184,7 +184,7 @@ proc hangingPunctuation*(value: string) = cssProp "hanging-punctuation", value
 proc height*(value: string) = cssProp "height", value
 proc height*(value: int) = cssProp "height", $value & "px"
 proc hyphens*(value: string) = cssProp "hyphens", value
-proc imageRendering*(value: string) = cssProp "image-rendering", value
+proc image*(value: string) = cssProp "image-rendering", value
 proc isolation*(value: string) = cssProp "isolation", value
 proc justifyContent*(value: string) = cssProp "justify-content", value
 proc keyframes*(value: string) = cssProp "keyframes", value
@@ -752,6 +752,7 @@ proc onwaiting*(value: string) = attr "onwaiting", value
 proc onwheel*(value: string) = attr "onwheel", value
 
 template render*(inner): string =
+  sayStack.setLen(1)
   inner
   assert sayStack.len == 1
   let r = sayStack[0]
@@ -759,6 +760,7 @@ template render*(inner): string =
   "<!DOCTYPE html>" & r
 
 template renderFragment*(inner): string =
+  sayStack.setLen(1)
   inner
   assert sayStack.len == 1
   let r = sayStack[0]
