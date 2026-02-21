@@ -12,6 +12,14 @@ var
   selectorStack {.threadvar.}: seq[string]
   cssStack {.threadvar.}: seq[string]
 
+proc resetStacks() =
+  sayStack = @[""]
+  attrsStack = @[""]
+  tagStyle = ""
+  cssIdx = 0
+  selectorStack = @[]
+  cssStack = @[""]
+
 proc say*(s: string) =
   sayStack[^1].add(s)
 
@@ -752,6 +760,7 @@ proc onwaiting*(value: string) = attr "onwaiting", value
 proc onwheel*(value: string) = attr "onwheel", value
 
 template render*(inner): string =
+  resetStacks()
   inner
   assert sayStack.len == 1
   let r = sayStack[0]
@@ -759,6 +768,7 @@ template render*(inner): string =
   "<!DOCTYPE html>" & r
 
 template renderFragment*(inner): string =
+  resetStacks()
   inner
   assert sayStack.len == 1
   let r = sayStack[0]
