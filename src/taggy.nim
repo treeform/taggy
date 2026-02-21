@@ -5,12 +5,12 @@ proc escapeHtml*(s: string): string =
   xmltree.escape(s)
 
 var
-  sayStack = @[""]
-  attrsStack = @[""]
-  tagStyle: string
-  cssIdx: int
-  selectorStack: seq[string]
-  cssStack = @[""]
+  sayStack {.threadvar.}: seq[string]
+  attrsStack {.threadvar.}: seq[string]
+  tagStyle {.threadvar.}: string
+  cssIdx {.threadvar.}: int
+  selectorStack {.threadvar.}: seq[string]
+  cssStack {.threadvar.}: seq[string]
 
 proc say*(s: string) =
   sayStack[^1].add(s)
