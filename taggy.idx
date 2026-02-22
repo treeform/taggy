@@ -1,796 +1,796 @@
 nimTitle	taggy	taggy.html	module src/taggy		0
 nim	escapeHtml	taggy.html#escapeHtml,string	proc escapeHtml(s: string): string		4
-nim	say	taggy.html#say,string	proc say(s: string)		23
-nim	sayCss	taggy.html#sayCss,string	proc sayCss(s: string)		26
-nim	styleSheet	taggy.html#styleSheet.t	template styleSheet(inner)		29
-nim	css	taggy.html#css.t,string,	template css(selector: string; inner)		39
-nim	cssProp	taggy.html#cssProp,string,string	proc cssProp(name, value: string)		49
-nim	accentColor	taggy.html#accentColor,string	proc accentColor(value: string)		51
-nim	alignContent	taggy.html#alignContent,string	proc alignContent(value: string)		52
-nim	alignItems	taggy.html#alignItems,string	proc alignItems(value: string)		53
-nim	alignSelf	taggy.html#alignSelf,string	proc alignSelf(value: string)		54
-nim	all	taggy.html#all,string	proc all(value: string)		55
-nim	animation	taggy.html#animation,string	proc animation(value: string)		56
-nim	animationDelay	taggy.html#animationDelay,string	proc animationDelay(value: string)		57
-nim	animationDirection	taggy.html#animationDirection,string	proc animationDirection(value: string)		58
-nim	animationDuration	taggy.html#animationDuration,string	proc animationDuration(value: string)		59
-nim	animationFillMode	taggy.html#animationFillMode,string	proc animationFillMode(value: string)		60
-nim	animationIterationCount	taggy.html#animationIterationCount,string	proc animationIterationCount(value: string)		61
-nim	animationName	taggy.html#animationName,string	proc animationName(value: string)		62
-nim	animationPlayState	taggy.html#animationPlayState,string	proc animationPlayState(value: string)		63
-nim	animationTimingFunction	taggy.html#animationTimingFunction,string	proc animationTimingFunction(value: string)		64
-nim	backdropFilter	taggy.html#backdropFilter,string	proc backdropFilter(value: string)		65
-nim	backfaceVisibility	taggy.html#backfaceVisibility,string	proc backfaceVisibility(value: string)		66
-nim	background	taggy.html#background,string	proc background(value: string)		67
-nim	backgroundAttachment	taggy.html#backgroundAttachment,string	proc backgroundAttachment(value: string)		68
-nim	backgroundBlendMode	taggy.html#backgroundBlendMode,string	proc backgroundBlendMode(value: string)		69
-nim	backgroundClip	taggy.html#backgroundClip,string	proc backgroundClip(value: string)		70
-nim	backgroundColor	taggy.html#backgroundColor,string	proc backgroundColor(value: string)		71
-nim	backgroundImage	taggy.html#backgroundImage,string	proc backgroundImage(value: string)		72
-nim	backgroundOrigin	taggy.html#backgroundOrigin,string	proc backgroundOrigin(value: string)		73
-nim	backgroundPosition	taggy.html#backgroundPosition,string	proc backgroundPosition(value: string)		74
-nim	backgroundRepeat	taggy.html#backgroundRepeat,string	proc backgroundRepeat(value: string)		75
-nim	backgroundSize	taggy.html#backgroundSize,string	proc backgroundSize(value: string)		76
-nim	border	taggy.html#border,string	proc border(value: string)		77
-nim	borderBottom	taggy.html#borderBottom,string	proc borderBottom(value: string)		78
-nim	borderBottomColor	taggy.html#borderBottomColor,string	proc borderBottomColor(value: string)		79
-nim	borderBottomLeftRadius	taggy.html#borderBottomLeftRadius,string	proc borderBottomLeftRadius(value: string)		80
-nim	borderBottomRightRadius	taggy.html#borderBottomRightRadius,string	proc borderBottomRightRadius(value: string)		81
-nim	borderBottomStyle	taggy.html#borderBottomStyle,string	proc borderBottomStyle(value: string)		82
-nim	borderBottomWidth	taggy.html#borderBottomWidth,string	proc borderBottomWidth(value: string)		83
-nim	borderCollapse	taggy.html#borderCollapse,string	proc borderCollapse(value: string)		84
-nim	borderColor	taggy.html#borderColor,string	proc borderColor(value: string)		85
-nim	borderImage	taggy.html#borderImage,string	proc borderImage(value: string)		86
-nim	borderImageOutset	taggy.html#borderImageOutset,string	proc borderImageOutset(value: string)		87
-nim	borderImageRepeat	taggy.html#borderImageRepeat,string	proc borderImageRepeat(value: string)		88
-nim	borderImageSlice	taggy.html#borderImageSlice,string	proc borderImageSlice(value: string)		89
-nim	borderImageSource	taggy.html#borderImageSource,string	proc borderImageSource(value: string)		90
-nim	borderImageWidth	taggy.html#borderImageWidth,string	proc borderImageWidth(value: string)		91
-nim	borderLeft	taggy.html#borderLeft,string	proc borderLeft(value: string)		92
-nim	borderLeftColor	taggy.html#borderLeftColor,string	proc borderLeftColor(value: string)		93
-nim	borderLeftStyle	taggy.html#borderLeftStyle,string	proc borderLeftStyle(value: string)		94
-nim	borderLeftWidth	taggy.html#borderLeftWidth,string	proc borderLeftWidth(value: string)		95
-nim	borderRadius	taggy.html#borderRadius,string	proc borderRadius(value: string)		96
-nim	borderRadius	taggy.html#borderRadius,SomeNumber	proc borderRadius(value: SomeNumber)		97
-nim	borderRight	taggy.html#borderRight,string	proc borderRight(value: string)		98
-nim	borderRightColor	taggy.html#borderRightColor,string	proc borderRightColor(value: string)		99
-nim	borderRightStyle	taggy.html#borderRightStyle,string	proc borderRightStyle(value: string)		100
-nim	borderRightWidth	taggy.html#borderRightWidth,string	proc borderRightWidth(value: string)		101
-nim	borderSpacing	taggy.html#borderSpacing,string	proc borderSpacing(value: string)		102
-nim	borderStyle	taggy.html#borderStyle,string	proc borderStyle(value: string)		103
-nim	borderTop	taggy.html#borderTop,string	proc borderTop(value: string)		104
-nim	borderTopColor	taggy.html#borderTopColor,string	proc borderTopColor(value: string)		105
-nim	borderTopLeftRadius	taggy.html#borderTopLeftRadius,string	proc borderTopLeftRadius(value: string)		106
-nim	borderTopRightRadius	taggy.html#borderTopRightRadius,string	proc borderTopRightRadius(value: string)		107
-nim	borderTopStyle	taggy.html#borderTopStyle,string	proc borderTopStyle(value: string)		108
-nim	borderTopWidth	taggy.html#borderTopWidth,string	proc borderTopWidth(value: string)		109
-nim	borderWidth	taggy.html#borderWidth,string	proc borderWidth(value: string)		110
-nim	bottom	taggy.html#bottom,string	proc bottom(value: string)		111
-nim	bottom	taggy.html#bottom,SomeNumber	proc bottom(value: SomeNumber)		112
-nim	boxDecorationBreak	taggy.html#boxDecorationBreak,string	proc boxDecorationBreak(value: string)		113
-nim	boxShadow	taggy.html#boxShadow,string	proc boxShadow(value: string)		114
-nim	boxSizing	taggy.html#boxSizing,string	proc boxSizing(value: string)		115
-nim	breakAfter	taggy.html#breakAfter,string	proc breakAfter(value: string)		116
-nim	breakBefore	taggy.html#breakBefore,string	proc breakBefore(value: string)		117
-nim	breakInside	taggy.html#breakInside,string	proc breakInside(value: string)		118
-nim	captionSide	taggy.html#captionSide,string	proc captionSide(value: string)		119
-nim	caretColor	taggy.html#caretColor,string	proc caretColor(value: string)		120
-nim	clear	taggy.html#clear,string	proc clear(value: string)		121
-nim	clip	taggy.html#clip,string	proc clip(value: string)		122
-nim	color	taggy.html#color,string	proc color(value: string)		123
-nim	columnCount	taggy.html#columnCount,string	proc columnCount(value: string)		124
-nim	columnFill	taggy.html#columnFill,string	proc columnFill(value: string)		125
-nim	columnGap	taggy.html#columnGap,string	proc columnGap(value: string)		126
-nim	columnRule	taggy.html#columnRule,string	proc columnRule(value: string)		127
-nim	columnRuleColor	taggy.html#columnRuleColor,string	proc columnRuleColor(value: string)		128
-nim	columnRuleStyle	taggy.html#columnRuleStyle,string	proc columnRuleStyle(value: string)		129
-nim	columnRuleWidth	taggy.html#columnRuleWidth,string	proc columnRuleWidth(value: string)		130
-nim	columnSpan	taggy.html#columnSpan,string	proc columnSpan(value: string)		131
-nim	columnWidth	taggy.html#columnWidth,string	proc columnWidth(value: string)		132
-nim	columns	taggy.html#columns,string	proc columns(value: string)		133
-nim	content	taggy.html#content,string	proc content(value: string)		134
-nim	counterIncrement	taggy.html#counterIncrement,string	proc counterIncrement(value: string)		135
-nim	counterReset	taggy.html#counterReset,string	proc counterReset(value: string)		136
-nim	cursor	taggy.html#cursor,string	proc cursor(value: string)		137
-nim	direction	taggy.html#direction,string	proc direction(value: string)		138
-nim	display	taggy.html#display,string	proc display(value: string)		139
-nim	emptyCells	taggy.html#emptyCells,string	proc emptyCells(value: string)		140
-nim	filter	taggy.html#filter,string	proc filter(value: string)		141
-nim	flex	taggy.html#flex,string	proc flex(value: string)		142
-nim	flexBasis	taggy.html#flexBasis,string	proc flexBasis(value: string)		143
-nim	flexDirection	taggy.html#flexDirection,string	proc flexDirection(value: string)		144
-nim	flexFlow	taggy.html#flexFlow,string	proc flexFlow(value: string)		145
-nim	flexGrow	taggy.html#flexGrow,string	proc flexGrow(value: string)		146
-nim	flexShrink	taggy.html#flexShrink,string	proc flexShrink(value: string)		147
-nim	flexWrap	taggy.html#flexWrap,string	proc flexWrap(value: string)		148
-nim	tfloat	taggy.html#tfloat,string	proc tfloat(value: string)		149
-nim	font	taggy.html#font,string	proc font(value: string)		150
-nim	fontFamily	taggy.html#fontFamily,string	proc fontFamily(value: string)		151
-nim	fontFeatureSettings	taggy.html#fontFeatureSettings,string	proc fontFeatureSettings(value: string)		152
-nim	fontKerning	taggy.html#fontKerning,string	proc fontKerning(value: string)		153
-nim	fontLanguageOverride	taggy.html#fontLanguageOverride,string	proc fontLanguageOverride(value: string)		154
-nim	fontSize	taggy.html#fontSize,string	proc fontSize(value: string)		155
-nim	fontSize	taggy.html#fontSize,SomeNumber	proc fontSize(value: SomeNumber)		156
-nim	fontSizeAdjust	taggy.html#fontSizeAdjust,string	proc fontSizeAdjust(value: string)		158
-nim	fontStretch	taggy.html#fontStretch,string	proc fontStretch(value: string)		159
-nim	fontStyle	taggy.html#fontStyle,string	proc fontStyle(value: string)		160
-nim	fontSynthesis	taggy.html#fontSynthesis,string	proc fontSynthesis(value: string)		161
-nim	fontVariant	taggy.html#fontVariant,string	proc fontVariant(value: string)		162
-nim	fontVariantAlternates	taggy.html#fontVariantAlternates,string	proc fontVariantAlternates(value: string)		163
-nim	fontVariantCaps	taggy.html#fontVariantCaps,string	proc fontVariantCaps(value: string)		164
-nim	fontVariantEastAsian	taggy.html#fontVariantEastAsian,string	proc fontVariantEastAsian(value: string)		165
-nim	fontVariantLigatures	taggy.html#fontVariantLigatures,string	proc fontVariantLigatures(value: string)		166
-nim	fontVariantNumeric	taggy.html#fontVariantNumeric,string	proc fontVariantNumeric(value: string)		167
-nim	fontVariantPosition	taggy.html#fontVariantPosition,string	proc fontVariantPosition(value: string)		168
-nim	fontWeight	taggy.html#fontWeight,string	proc fontWeight(value: string)		169
-nim	fontWeight	taggy.html#fontWeight,SomeNumber	proc fontWeight(value: SomeNumber)		170
-nim	gap	taggy.html#gap,string	proc gap(value: string)		171
-nim	gap	taggy.html#gap,SomeNumber	proc gap(value: SomeNumber)		172
-nim	grid	taggy.html#grid,string	proc grid(value: string)		173
-nim	gridArea	taggy.html#gridArea,string	proc gridArea(value: string)		174
-nim	gridAutoColumns	taggy.html#gridAutoColumns,string	proc gridAutoColumns(value: string)		175
-nim	gridAutoFlow	taggy.html#gridAutoFlow,string	proc gridAutoFlow(value: string)		176
-nim	gridAutoRows	taggy.html#gridAutoRows,string	proc gridAutoRows(value: string)		177
-nim	gridColumn	taggy.html#gridColumn,string	proc gridColumn(value: string)		178
-nim	gridColumnEnd	taggy.html#gridColumnEnd,string	proc gridColumnEnd(value: string)		179
-nim	gridColumnGap	taggy.html#gridColumnGap,string	proc gridColumnGap(value: string)		180
-nim	gridColumnStart	taggy.html#gridColumnStart,string	proc gridColumnStart(value: string)		181
-nim	gridGap	taggy.html#gridGap,string	proc gridGap(value: string)		182
-nim	gridRow	taggy.html#gridRow,string	proc gridRow(value: string)		183
-nim	gridRowEnd	taggy.html#gridRowEnd,string	proc gridRowEnd(value: string)		184
-nim	gridRowGap	taggy.html#gridRowGap,string	proc gridRowGap(value: string)		185
-nim	gridRowStart	taggy.html#gridRowStart,string	proc gridRowStart(value: string)		186
-nim	gridTemplate	taggy.html#gridTemplate,string	proc gridTemplate(value: string)		187
-nim	gridTemplateAreas	taggy.html#gridTemplateAreas,string	proc gridTemplateAreas(value: string)		188
-nim	gridTemplateColumns	taggy.html#gridTemplateColumns,string	proc gridTemplateColumns(value: string)		189
-nim	gridTemplateRows	taggy.html#gridTemplateRows,string	proc gridTemplateRows(value: string)		190
-nim	hangingPunctuation	taggy.html#hangingPunctuation,string	proc hangingPunctuation(value: string)		191
-nim	height	taggy.html#height,string	proc height(value: string)		192
-nim	height	taggy.html#height,int	proc height(value: int)		193
-nim	hyphens	taggy.html#hyphens,string	proc hyphens(value: string)		194
-nim	imageRendering	taggy.html#imageRendering,string	proc imageRendering(value: string)		195
-nim	isolation	taggy.html#isolation,string	proc isolation(value: string)		196
-nim	justifyContent	taggy.html#justifyContent,string	proc justifyContent(value: string)		197
-nim	keyframes	taggy.html#keyframes,string	proc keyframes(value: string)		198
-nim	left	taggy.html#left,string	proc left(value: string)		199
-nim	left	taggy.html#left,SomeNumber	proc left(value: SomeNumber)		200
-nim	letterSpacing	taggy.html#letterSpacing,string	proc letterSpacing(value: string)		201
-nim	lineBreak	taggy.html#lineBreak,string	proc lineBreak(value: string)		202
-nim	lineHeight	taggy.html#lineHeight,string	proc lineHeight(value: string)		203
-nim	lineHeight	taggy.html#lineHeight,SomeNumber	proc lineHeight(value: SomeNumber)		204
-nim	listStyle	taggy.html#listStyle,string	proc listStyle(value: string)		206
-nim	listStyleImage	taggy.html#listStyleImage,string	proc listStyleImage(value: string)		207
-nim	listStylePosition	taggy.html#listStylePosition,string	proc listStylePosition(value: string)		208
-nim	listStyleType	taggy.html#listStyleType,string	proc listStyleType(value: string)		209
-nim	margin	taggy.html#margin,string	proc margin(value: string)		211
-nim	margin	taggy.html#margin,SomeNumber	proc margin(value: SomeNumber)		212
-nim	margin	taggy.html#margin,SomeNumber,SomeNumber	proc margin(vertical, horizontal: SomeNumber)		213
-nim	margin	taggy.html#margin,SomeNumber,SomeNumber,SomeNumber,SomeNumber	proc margin(top, right, bottom, left: SomeNumber)		214
-nim	marginBottom	taggy.html#marginBottom,string	proc marginBottom(value: string)		215
-nim	marginBottom	taggy.html#marginBottom,SomeNumber	proc marginBottom(value: SomeNumber)		216
-nim	marginLeft	taggy.html#marginLeft,string	proc marginLeft(value: string)		217
-nim	marginLeft	taggy.html#marginLeft,SomeNumber	proc marginLeft(value: SomeNumber)		218
-nim	marginRight	taggy.html#marginRight,string	proc marginRight(value: string)		219
-nim	marginRight	taggy.html#marginRight,SomeNumber	proc marginRight(value: SomeNumber)		220
-nim	marginTop	taggy.html#marginTop,string	proc marginTop(value: string)		221
-nim	marginTop	taggy.html#marginTop,SomeNumber	proc marginTop(value: SomeNumber)		222
-nim	mask	taggy.html#mask,string	proc mask(value: string)		224
-nim	maskClip	taggy.html#maskClip,string	proc maskClip(value: string)		225
-nim	maskComposite	taggy.html#maskComposite,string	proc maskComposite(value: string)		226
-nim	maskImage	taggy.html#maskImage,string	proc maskImage(value: string)		227
-nim	maskMode	taggy.html#maskMode,string	proc maskMode(value: string)		228
-nim	maskOrigin	taggy.html#maskOrigin,string	proc maskOrigin(value: string)		229
-nim	maskPosition	taggy.html#maskPosition,string	proc maskPosition(value: string)		230
-nim	maskRepeat	taggy.html#maskRepeat,string	proc maskRepeat(value: string)		231
-nim	maskSize	taggy.html#maskSize,string	proc maskSize(value: string)		232
-nim	maskType	taggy.html#maskType,string	proc maskType(value: string)		233
-nim	maxHeight	taggy.html#maxHeight,string	proc maxHeight(value: string)		234
-nim	maxHeight	taggy.html#maxHeight,SomeNumber	proc maxHeight(value: SomeNumber)		235
-nim	maxWidth	taggy.html#maxWidth,string	proc maxWidth(value: string)		236
-nim	maxWidth	taggy.html#maxWidth,SomeNumber	proc maxWidth(value: SomeNumber)		237
-nim	minHeight	taggy.html#minHeight,string	proc minHeight(value: string)		238
-nim	minHeight	taggy.html#minHeight,SomeNumber	proc minHeight(value: SomeNumber)		239
-nim	minWidth	taggy.html#minWidth,string	proc minWidth(value: string)		240
-nim	minWidth	taggy.html#minWidth,SomeNumber	proc minWidth(value: SomeNumber)		241
-nim	mixBlendMode	taggy.html#mixBlendMode,string	proc mixBlendMode(value: string)		242
-nim	objectFit	taggy.html#objectFit,string	proc objectFit(value: string)		243
-nim	objectPosition	taggy.html#objectPosition,string	proc objectPosition(value: string)		244
-nim	opacity	taggy.html#opacity,string	proc opacity(value: string)		245
-nim	opacity	taggy.html#opacity,SomeNumber	proc opacity(value: SomeNumber)		246
-nim	order	taggy.html#order,string	proc order(value: string)		247
-nim	orphans	taggy.html#orphans,string	proc orphans(value: string)		248
-nim	outline	taggy.html#outline,string	proc outline(value: string)		249
-nim	outlineColor	taggy.html#outlineColor,string	proc outlineColor(value: string)		250
-nim	outlineOffset	taggy.html#outlineOffset,string	proc outlineOffset(value: string)		251
-nim	outlineStyle	taggy.html#outlineStyle,string	proc outlineStyle(value: string)		252
-nim	outlineWidth	taggy.html#outlineWidth,string	proc outlineWidth(value: string)		253
-nim	overflow	taggy.html#overflow,string	proc overflow(value: string)		254
-nim	overflowWrap	taggy.html#overflowWrap,string	proc overflowWrap(value: string)		255
-nim	overflowX	taggy.html#overflowX,string	proc overflowX(value: string)		256
-nim	overflowY	taggy.html#overflowY,string	proc overflowY(value: string)		257
-nim	padding	taggy.html#padding,string	proc padding(value: string)		259
-nim	padding	taggy.html#padding,SomeNumber	proc padding(value: SomeNumber)		260
-nim	padding	taggy.html#padding,SomeNumber,SomeNumber	proc padding(vertical, horizontal: SomeNumber)		261
-nim	padding	taggy.html#padding,SomeNumber,SomeNumber,SomeNumber,SomeNumber	proc padding(top, right, bottom, left: SomeNumber)		262
-nim	paddingBottom	taggy.html#paddingBottom,string	proc paddingBottom(value: string)		263
-nim	paddingBottom	taggy.html#paddingBottom,SomeNumber	proc paddingBottom(value: SomeNumber)		264
-nim	paddingLeft	taggy.html#paddingLeft,string	proc paddingLeft(value: string)		265
-nim	paddingLeft	taggy.html#paddingLeft,SomeNumber	proc paddingLeft(value: SomeNumber)		266
-nim	paddingRight	taggy.html#paddingRight,string	proc paddingRight(value: string)		267
-nim	paddingRight	taggy.html#paddingRight,SomeNumber	proc paddingRight(value: SomeNumber)		268
-nim	paddingTop	taggy.html#paddingTop,string	proc paddingTop(value: string)		269
-nim	paddingTop	taggy.html#paddingTop,SomeNumber	proc paddingTop(value: SomeNumber)		270
-nim	pageBreakAfter	taggy.html#pageBreakAfter,string	proc pageBreakAfter(value: string)		272
-nim	pageBreakBefore	taggy.html#pageBreakBefore,string	proc pageBreakBefore(value: string)		273
-nim	pageBreakInside	taggy.html#pageBreakInside,string	proc pageBreakInside(value: string)		274
-nim	perspective	taggy.html#perspective,string	proc perspective(value: string)		275
-nim	perspectiveOrigin	taggy.html#perspectiveOrigin,string	proc perspectiveOrigin(value: string)		276
-nim	pointerEvents	taggy.html#pointerEvents,string	proc pointerEvents(value: string)		277
-nim	position	taggy.html#position,string	proc position(value: string)		278
-nim	property	taggy.html#property,string	proc property(value: string)		279
-nim	quotes	taggy.html#quotes,string	proc quotes(value: string)		280
-nim	resize	taggy.html#resize,string	proc resize(value: string)		281
-nim	right	taggy.html#right,string	proc right(value: string)		282
-nim	right	taggy.html#right,SomeNumber	proc right(value: SomeNumber)		283
-nim	rowGap	taggy.html#rowGap,string	proc rowGap(value: string)		284
-nim	scrollBehavior	taggy.html#scrollBehavior,string	proc scrollBehavior(value: string)		285
-nim	tabSize	taggy.html#tabSize,string	proc tabSize(value: string)		286
-nim	tableLayout	taggy.html#tableLayout,string	proc tableLayout(value: string)		287
-nim	textAlign	taggy.html#textAlign,string	proc textAlign(value: string)		288
-nim	textAlignLast	taggy.html#textAlignLast,string	proc textAlignLast(value: string)		289
-nim	textCombineUpright	taggy.html#textCombineUpright,string	proc textCombineUpright(value: string)		290
-nim	textDecoration	taggy.html#textDecoration,string	proc textDecoration(value: string)		291
-nim	textDecorationColor	taggy.html#textDecorationColor,string	proc textDecorationColor(value: string)		292
-nim	textDecorationLine	taggy.html#textDecorationLine,string	proc textDecorationLine(value: string)		293
-nim	textDecorationStyle	taggy.html#textDecorationStyle,string	proc textDecorationStyle(value: string)		294
-nim	textDecorationThickness	taggy.html#textDecorationThickness,string	proc textDecorationThickness(value: string)		295
-nim	textEmphasis	taggy.html#textEmphasis,string	proc textEmphasis(value: string)		296
-nim	textIndent	taggy.html#textIndent,string	proc textIndent(value: string)		297
-nim	textJustify	taggy.html#textJustify,string	proc textJustify(value: string)		298
-nim	textOrientation	taggy.html#textOrientation,string	proc textOrientation(value: string)		299
-nim	textOverflow	taggy.html#textOverflow,string	proc textOverflow(value: string)		300
-nim	textShadow	taggy.html#textShadow,string	proc textShadow(value: string)		301
-nim	textTransform	taggy.html#textTransform,string	proc textTransform(value: string)		302
-nim	textUnderlinePosition	taggy.html#textUnderlinePosition,string	proc textUnderlinePosition(value: string)		303
-nim	top	taggy.html#top,string	proc top(value: string)		304
-nim	top	taggy.html#top,SomeNumber	proc top(value: SomeNumber)		305
-nim	transform	taggy.html#transform,string	proc transform(value: string)		306
-nim	transformOrigin	taggy.html#transformOrigin,string	proc transformOrigin(value: string)		307
-nim	transformStyle	taggy.html#transformStyle,string	proc transformStyle(value: string)		308
-nim	transition	taggy.html#transition,string	proc transition(value: string)		309
-nim	transitionDelay	taggy.html#transitionDelay,string	proc transitionDelay(value: string)		310
-nim	transitionDuration	taggy.html#transitionDuration,string	proc transitionDuration(value: string)		311
-nim	transitionProperty	taggy.html#transitionProperty,string	proc transitionProperty(value: string)		312
-nim	transitionTimingFunction	taggy.html#transitionTimingFunction,string	proc transitionTimingFunction(value: string)		313
-nim	unicodeBidi	taggy.html#unicodeBidi,string	proc unicodeBidi(value: string)		314
-nim	userSelect	taggy.html#userSelect,string	proc userSelect(value: string)		315
-nim	verticalAlign	taggy.html#verticalAlign,string	proc verticalAlign(value: string)		316
-nim	visibility	taggy.html#visibility,string	proc visibility(value: string)		317
-nim	whiteSpace	taggy.html#whiteSpace,string	proc whiteSpace(value: string)		318
-nim	widows	taggy.html#widows,string	proc widows(value: string)		319
-nim	width	taggy.html#width,string	proc width(value: string)		320
-nim	width	taggy.html#width,SomeNumber	proc width(value: SomeNumber)		321
-nim	wordBreak	taggy.html#wordBreak,string	proc wordBreak(value: string)		322
-nim	wordSpacing	taggy.html#wordSpacing,string	proc wordSpacing(value: string)		323
-nim	wordWrap	taggy.html#wordWrap,string	proc wordWrap(value: string)		324
-nim	writingMode	taggy.html#writingMode,string	proc writingMode(value: string)		325
-nim	zIndex	taggy.html#zIndex,string	proc zIndex(value: string)		326
-nim	zIndex	taggy.html#zIndex,SomeNumber	proc zIndex(value: SomeNumber)		327
-nim	zoom	taggy.html#zoom,string	proc zoom(value: string)		328
-nim	zoom	taggy.html#zoom,SomeNumber	proc zoom(value: SomeNumber)		329
-nim	tag	taggy.html#tag.t,string,string,	template tag(selector, name: string; inner)		361
-nim	a	taggy.html#a.t,string,	template a(selector = ""; inner)		371
-nim	abbr	taggy.html#abbr.t,string,	template abbr(selector = ""; inner)		372
-nim	acronym	taggy.html#acronym.t,string,	template acronym(selector = ""; inner)		373
-nim	address	taggy.html#address.t,string,	template address(selector = ""; inner)		374
-nim	applet	taggy.html#applet.t,string,	template applet(selector = ""; inner)		375
-nim	area	taggy.html#area.t,string,	template area(selector = ""; inner)		376
-nim	article	taggy.html#article.t,string,	template article(selector = ""; inner)		377
-nim	aside	taggy.html#aside.t,string,	template aside(selector = ""; inner)		378
-nim	audio	taggy.html#audio.t,string,	template audio(selector = ""; inner)		379
-nim	b	taggy.html#b.t,string,	template b(selector = ""; inner)		380
-nim	base	taggy.html#base.t,string,	template base(selector = ""; inner)		381
-nim	basefont	taggy.html#basefont.t,string,	template basefont(selector = ""; inner)		382
-nim	bdo	taggy.html#bdo.t,string,	template bdo(selector = ""; inner)		383
-nim	big	taggy.html#big.t,string,	template big(selector = ""; inner)		384
-nim	blockquote	taggy.html#blockquote.t,string,	template blockquote(selector = ""; inner)		385
-nim	body	taggy.html#body.t,string,	template body(selector = ""; inner)		386
-nim	br	taggy.html#br.t,string,	template br(selector = ""; inner)		387
-nim	button	taggy.html#button.t,string,	template button(selector = ""; inner)		388
-nim	canvas	taggy.html#canvas.t,string,	template canvas(selector = ""; inner)		389
-nim	caption	taggy.html#caption.t,string,	template caption(selector = ""; inner)		390
-nim	center	taggy.html#center.t,string,	template center(selector = ""; inner)		391
-nim	cite	taggy.html#cite.t,string,	template cite(selector = ""; inner)		392
-nim	code	taggy.html#code.t,string,	template code(selector = ""; inner)		393
-nim	col	taggy.html#col.t,string,	template col(selector = ""; inner)		394
-nim	colgroup	taggy.html#colgroup.t,string,	template colgroup(selector = ""; inner)		395
-nim	datalist	taggy.html#datalist.t,string,	template datalist(selector = ""; inner)		396
-nim	dd	taggy.html#dd.t,string,	template dd(selector = ""; inner)		397
-nim	del	taggy.html#del.t,string,	template del(selector = ""; inner)		398
-nim	dfn	taggy.html#dfn.t,string,	template dfn(selector = ""; inner)		399
-nim	tdiv	taggy.html#tdiv.t,string,	template tdiv(selector = ""; inner)		400
-nim	dl	taggy.html#dl.t,string,	template dl(selector = ""; inner)		401
-nim	dt	taggy.html#dt.t,string,	template dt(selector = ""; inner)		402
-nim	em	taggy.html#em.t,string,	template em(selector = ""; inner)		403
-nim	embed	taggy.html#embed.t,string,	template embed(selector = ""; inner)		404
-nim	fieldset	taggy.html#fieldset.t,string,	template fieldset(selector = ""; inner)		405
-nim	figcaption	taggy.html#figcaption.t,string,	template figcaption(selector = ""; inner)		406
-nim	figure	taggy.html#figure.t,string,	template figure(selector = ""; inner)		407
-nim	font	taggy.html#font.t,string,	template font(selector = ""; inner)		408
-nim	footer	taggy.html#footer.t,string,	template footer(selector = ""; inner)		409
-nim	form	taggy.html#form.t,string,	template form(selector = ""; inner)		410
-nim	frame	taggy.html#frame.t,string,	template frame(selector = ""; inner)		411
-nim	frameset	taggy.html#frameset.t,string,	template frameset(selector = ""; inner)		412
-nim	head	taggy.html#head.t,string,	template head(selector = ""; inner)		413
-nim	header	taggy.html#header.t,string,	template header(selector = ""; inner)		414
-nim	h1	taggy.html#h1.t,string,	template h1(selector = ""; inner)		415
-nim	h2	taggy.html#h2.t,string,	template h2(selector = ""; inner)		416
-nim	h3	taggy.html#h3.t,string,	template h3(selector = ""; inner)		417
-nim	h4	taggy.html#h4.t,string,	template h4(selector = ""; inner)		418
-nim	h5	taggy.html#h5.t,string,	template h5(selector = ""; inner)		419
-nim	h6	taggy.html#h6.t,string,	template h6(selector = ""; inner)		420
-nim	hr	taggy.html#hr.t,string,	template hr(selector = ""; inner)		421
-nim	html	taggy.html#html.t,string,	template html(selector = ""; inner)		422
-nim	i	taggy.html#i.t,string,	template i(selector = ""; inner)		423
-nim	iframe	taggy.html#iframe.t,string,	template iframe(selector = ""; inner)		424
-nim	img	taggy.html#img.t,string,	template img(selector = ""; inner)		425
-nim	input	taggy.html#input.t,string,	template input(selector = ""; inner)		426
-nim	ins	taggy.html#ins.t,string,	template ins(selector = ""; inner)		427
-nim	kbd	taggy.html#kbd.t,string,	template kbd(selector = ""; inner)		428
-nim	label	taggy.html#label.t,string,	template label(selector = ""; inner)		429
-nim	legend	taggy.html#legend.t,string,	template legend(selector = ""; inner)		430
-nim	li	taggy.html#li.t,string,	template li(selector = ""; inner)		431
-nim	link	taggy.html#link.t,string,	template link(selector = ""; inner)		432
-nim	main	taggy.html#main.t,string,	template main(selector = ""; inner)		433
-nim	map	taggy.html#map.t,string,	template map(selector = ""; inner)		434
-nim	mark	taggy.html#mark.t,string,	template mark(selector = ""; inner)		435
-nim	meta	taggy.html#meta.t,string,	template meta(selector = ""; inner)		436
-nim	meter	taggy.html#meter.t,string,	template meter(selector = ""; inner)		437
-nim	nav	taggy.html#nav.t,string,	template nav(selector = ""; inner)		438
-nim	noscript	taggy.html#noscript.t,string,	template noscript(selector = ""; inner)		439
-nim	tobject	taggy.html#tobject.t,string,	template tobject(selector = ""; inner)		440
-nim	ol	taggy.html#ol.t,string,	template ol(selector = ""; inner)		441
-nim	optgroup	taggy.html#optgroup.t,string,	template optgroup(selector = ""; inner)		442
-nim	option	taggy.html#option.t,string,	template option(selector = ""; inner)		443
-nim	p	taggy.html#p.t,string,	template p(selector = ""; inner)		444
-nim	param	taggy.html#param.t,string,	template param(selector = ""; inner)		445
-nim	pre	taggy.html#pre.t,string,	template pre(selector = ""; inner)		446
-nim	progress	taggy.html#progress.t,string,	template progress(selector = ""; inner)		447
-nim	q	taggy.html#q.t,string,	template q(selector = ""; inner)		448
-nim	s	taggy.html#s.t,string,	template s(selector = ""; inner)		449
-nim	samp	taggy.html#samp.t,string,	template samp(selector = ""; inner)		450
-nim	script	taggy.html#script.t,string,	template script(selector = ""; inner)		451
-nim	section	taggy.html#section.t,string,	template section(selector = ""; inner)		452
-nim	select	taggy.html#select.t,string,	template select(selector = ""; inner)		453
-nim	small	taggy.html#small.t,string,	template small(selector = ""; inner)		454
-nim	source	taggy.html#source.t,string,	template source(selector = ""; inner)		455
-nim	span	taggy.html#span.t,string,	template span(selector = ""; inner)		456
-nim	strike	taggy.html#strike.t,string,	template strike(selector = ""; inner)		457
-nim	strong	taggy.html#strong.t,string,	template strong(selector = ""; inner)		458
-nim	sub	taggy.html#sub.t,string,	template sub(selector = ""; inner)		459
-nim	sup	taggy.html#sup.t,string,	template sup(selector = ""; inner)		460
-nim	table	taggy.html#table.t,string,	template table(selector = ""; inner)		461
-nim	tbody	taggy.html#tbody.t,string,	template tbody(selector = ""; inner)		462
-nim	td	taggy.html#td.t,string,	template td(selector = ""; inner)		463
-nim	textarea	taggy.html#textarea.t,string,	template textarea(selector = ""; inner)		464
-nim	tfoot	taggy.html#tfoot.t,string,	template tfoot(selector = ""; inner)		465
-nim	th	taggy.html#th.t,string,	template th(selector = ""; inner)		466
-nim	thead	taggy.html#thead.t,string,	template thead(selector = ""; inner)		467
-nim	time	taggy.html#time.t,string,	template time(selector = ""; inner)		468
-nim	title	taggy.html#title.t,string,	template title(selector = ""; inner)		469
-nim	tr	taggy.html#tr.t,string,	template tr(selector = ""; inner)		470
-nim	u	taggy.html#u.t,string,	template u(selector = ""; inner)		471
-nim	ul	taggy.html#ul.t,string,	template ul(selector = ""; inner)		472
-nim	tvar	taggy.html#tvar.t,string,	template tvar(selector = ""; inner)		473
-nim	video	taggy.html#video.t,string,	template video(selector = ""; inner)		474
-nim	wbr	taggy.html#wbr.t,string,	template wbr(selector = ""; inner)		475
-nim	a	taggy.html#a.t	template a(inner)		477
-nim	abbr	taggy.html#abbr.t	template abbr(inner)		478
-nim	acronym	taggy.html#acronym.t	template acronym(inner)		479
-nim	address	taggy.html#address.t	template address(inner)		480
-nim	applet	taggy.html#applet.t	template applet(inner)		481
-nim	area	taggy.html#area.t	template area(inner)		482
-nim	article	taggy.html#article.t	template article(inner)		483
-nim	aside	taggy.html#aside.t	template aside(inner)		484
-nim	audio	taggy.html#audio.t	template audio(inner)		485
-nim	b	taggy.html#b.t	template b(inner)		486
-nim	base	taggy.html#base.t	template base(inner)		487
-nim	basefont	taggy.html#basefont.t	template basefont(inner)		488
-nim	bdo	taggy.html#bdo.t	template bdo(inner)		489
-nim	big	taggy.html#big.t	template big(inner)		490
-nim	blockquote	taggy.html#blockquote.t	template blockquote(inner)		491
-nim	body	taggy.html#body.t	template body(inner)		492
-nim	br	taggy.html#br.t	template br(inner)		493
-nim	button	taggy.html#button.t	template button(inner)		494
-nim	canvas	taggy.html#canvas.t	template canvas(inner)		495
-nim	caption	taggy.html#caption.t	template caption(inner)		496
-nim	center	taggy.html#center.t	template center(inner)		497
-nim	cite	taggy.html#cite.t	template cite(inner)		498
-nim	code	taggy.html#code.t	template code(inner)		499
-nim	col	taggy.html#col.t	template col(inner)		500
-nim	colgroup	taggy.html#colgroup.t	template colgroup(inner)		501
-nim	datalist	taggy.html#datalist.t	template datalist(inner)		502
-nim	dd	taggy.html#dd.t	template dd(inner)		503
-nim	del	taggy.html#del.t	template del(inner)		504
-nim	dfn	taggy.html#dfn.t	template dfn(inner)		505
-nim	tdiv	taggy.html#tdiv.t	template tdiv(inner)		506
-nim	dl	taggy.html#dl.t	template dl(inner)		507
-nim	dt	taggy.html#dt.t	template dt(inner)		508
-nim	em	taggy.html#em.t	template em(inner)		509
-nim	embed	taggy.html#embed.t	template embed(inner)		510
-nim	fieldset	taggy.html#fieldset.t	template fieldset(inner)		511
-nim	figcaption	taggy.html#figcaption.t	template figcaption(inner)		512
-nim	figure	taggy.html#figure.t	template figure(inner)		513
-nim	font	taggy.html#font.t	template font(inner)		514
-nim	footer	taggy.html#footer.t	template footer(inner)		515
-nim	form	taggy.html#form.t	template form(inner)		516
-nim	frame	taggy.html#frame.t	template frame(inner)		517
-nim	frameset	taggy.html#frameset.t	template frameset(inner)		518
-nim	head	taggy.html#head.t	template head(inner)		519
-nim	header	taggy.html#header.t	template header(inner)		520
-nim	h1	taggy.html#h1.t	template h1(inner)		521
-nim	h2	taggy.html#h2.t	template h2(inner)		522
-nim	h3	taggy.html#h3.t	template h3(inner)		523
-nim	h4	taggy.html#h4.t	template h4(inner)		524
-nim	h5	taggy.html#h5.t	template h5(inner)		525
-nim	h6	taggy.html#h6.t	template h6(inner)		526
-nim	hr	taggy.html#hr.t	template hr(inner)		527
-nim	html	taggy.html#html.t	template html(inner)		528
-nim	i	taggy.html#i.t	template i(inner)		529
-nim	iframe	taggy.html#iframe.t	template iframe(inner)		530
-nim	img	taggy.html#img.t	template img(inner)		531
-nim	input	taggy.html#input.t	template input(inner)		532
-nim	ins	taggy.html#ins.t	template ins(inner)		533
-nim	kbd	taggy.html#kbd.t	template kbd(inner)		534
-nim	label	taggy.html#label.t	template label(inner)		535
-nim	legend	taggy.html#legend.t	template legend(inner)		536
-nim	li	taggy.html#li.t	template li(inner)		537
-nim	link	taggy.html#link.t	template link(inner)		538
-nim	main	taggy.html#main.t	template main(inner)		539
-nim	map	taggy.html#map.t	template map(inner)		540
-nim	mark	taggy.html#mark.t	template mark(inner)		541
-nim	meta	taggy.html#meta.t	template meta(inner)		542
-nim	meter	taggy.html#meter.t	template meter(inner)		543
-nim	nav	taggy.html#nav.t	template nav(inner)		544
-nim	noscript	taggy.html#noscript.t	template noscript(inner)		545
-nim	tobject	taggy.html#tobject.t	template tobject(inner)		546
-nim	ol	taggy.html#ol.t	template ol(inner)		547
-nim	optgroup	taggy.html#optgroup.t	template optgroup(inner)		548
-nim	option	taggy.html#option.t	template option(inner)		549
-nim	p	taggy.html#p.t	template p(inner)		550
-nim	param	taggy.html#param.t	template param(inner)		551
-nim	pre	taggy.html#pre.t	template pre(inner)		552
-nim	progress	taggy.html#progress.t	template progress(inner)		553
-nim	q	taggy.html#q.t	template q(inner)		554
-nim	s	taggy.html#s.t	template s(inner)		555
-nim	samp	taggy.html#samp.t	template samp(inner)		556
-nim	script	taggy.html#script.t	template script(inner)		557
-nim	section	taggy.html#section.t	template section(inner)		558
-nim	select	taggy.html#select.t	template select(inner)		559
-nim	small	taggy.html#small.t	template small(inner)		560
-nim	source	taggy.html#source.t	template source(inner)		561
-nim	span	taggy.html#span.t	template span(inner)		562
-nim	strike	taggy.html#strike.t	template strike(inner)		563
-nim	strong	taggy.html#strong.t	template strong(inner)		564
-nim	sub	taggy.html#sub.t	template sub(inner)		565
-nim	sup	taggy.html#sup.t	template sup(inner)		566
-nim	table	taggy.html#table.t	template table(inner)		567
-nim	tbody	taggy.html#tbody.t	template tbody(inner)		568
-nim	td	taggy.html#td.t	template td(inner)		569
-nim	textarea	taggy.html#textarea.t	template textarea(inner)		570
-nim	tfoot	taggy.html#tfoot.t	template tfoot(inner)		571
-nim	th	taggy.html#th.t	template th(inner)		572
-nim	thead	taggy.html#thead.t	template thead(inner)		573
-nim	time	taggy.html#time.t	template time(inner)		574
-nim	title	taggy.html#title.t	template title(inner)		575
-nim	tr	taggy.html#tr.t	template tr(inner)		576
-nim	u	taggy.html#u.t	template u(inner)		577
-nim	ul	taggy.html#ul.t	template ul(inner)		578
-nim	tvar	taggy.html#tvar.t	template tvar(inner)		579
-nim	video	taggy.html#video.t	template video(inner)		580
-nim	wbr	taggy.html#wbr.t	template wbr(inner)		581
-nim	style	taggy.html#style.t	template style(inner)		583
-nim	attr	taggy.html#attr,string,string	proc attr(name, value: string)		590
-nim	accept	taggy.html#accept,string	proc accept(value: string)		593
-nim	acceptCharset	taggy.html#acceptCharset,string	proc acceptCharset(value: string)		594
-nim	accesskey	taggy.html#accesskey,string	proc accesskey(value: string)		595
-nim	action	taggy.html#action,string	proc action(value: string)		596
-nim	alt	taggy.html#alt,string	proc alt(value: string)		597
-nim	tasync	taggy.html#tasync,string	proc tasync(value: string)		598
-nim	autocomplete	taggy.html#autocomplete,string	proc autocomplete(value: string)		599
-nim	autofocus	taggy.html#autofocus,string	proc autofocus(value: string)		600
-nim	autoplay	taggy.html#autoplay,string	proc autoplay(value: string)		601
-nim	charset	taggy.html#charset,string	proc charset(value: string)		602
-nim	checked	taggy.html#checked,string	proc checked(value: string)		603
-nim	cite	taggy.html#cite,string	proc cite(value: string)		604
-nim	class	taggy.html#class,string	proc class(value: string)		605
-nim	cols	taggy.html#cols,string	proc cols(value: string)		606
-nim	colspan	taggy.html#colspan,string	proc colspan(value: string)		607
-nim	attrProperty	taggy.html#attrProperty,string	proc attrProperty(value: string)		608
-nim	attrContent	taggy.html#attrContent,string	proc attrContent(value: string)		609
-nim	contenteditable	taggy.html#contenteditable,string	proc contenteditable(value: string)		610
-nim	controls	taggy.html#controls,string	proc controls(value: string)		611
-nim	coords	taggy.html#coords,string	proc coords(value: string)		612
-nim	data	taggy.html#data,string	proc data(value: string)		613
-nim	datetime	taggy.html#datetime,string	proc datetime(value: string)		614
-nim	default	taggy.html#default,string	proc default(value: string)		615
-nim	tdefer	taggy.html#tdefer,string	proc tdefer(value: string)		616
-nim	dir	taggy.html#dir,string	proc dir(value: string)		617
-nim	dirname	taggy.html#dirname,string	proc dirname(value: string)		618
-nim	disabled	taggy.html#disabled,string	proc disabled(value: string)		619
-nim	download	taggy.html#download,string	proc download(value: string)		620
-nim	draggable	taggy.html#draggable,string	proc draggable(value: string)		621
-nim	enctype	taggy.html#enctype,string	proc enctype(value: string)		622
-nim	tfor	taggy.html#tfor,string	proc tfor(value: string)		623
-nim	form	taggy.html#form,string	proc form(value: string)		624
-nim	formaction	taggy.html#formaction,string	proc formaction(value: string)		625
-nim	headers	taggy.html#headers,string	proc headers(value: string)		626
-nim	attrHeight	taggy.html#attrHeight,string	proc attrHeight(value: string)		627
-nim	hidden	taggy.html#hidden,string	proc hidden(value: string)		628
-nim	high	taggy.html#high,string	proc high(value: string)		629
-nim	href	taggy.html#href,string	proc href(value: string)		630
-nim	hreflang	taggy.html#hreflang,string	proc hreflang(value: string)		631
-nim	httpEquiv	taggy.html#httpEquiv,string	proc httpEquiv(value: string)		632
-nim	id	taggy.html#id,string	proc id(value: string)		633
-nim	ismap	taggy.html#ismap,string	proc ismap(value: string)		634
-nim	kind	taggy.html#kind,string	proc kind(value: string)		635
-nim	label	taggy.html#label,string	proc label(value: string)		636
-nim	lang	taggy.html#lang,string	proc lang(value: string)		637
-nim	list	taggy.html#list,string	proc list(value: string)		638
-nim	loading	taggy.html#loading,string	proc loading(value: string)		639
-nim	loop	taggy.html#loop,string	proc loop(value: string)		640
-nim	low	taggy.html#low,string	proc low(value: string)		641
-nim	max	taggy.html#max,string	proc max(value: string)		642
-nim	maxlength	taggy.html#maxlength,string	proc maxlength(value: string)		643
-nim	media	taggy.html#media,string	proc media(value: string)		644
-nim	tmethod	taggy.html#tmethod,string	proc tmethod(value: string)		645
-nim	min	taggy.html#min,string	proc min(value: string)		646
-nim	multiple	taggy.html#multiple,string	proc multiple(value: string)		647
-nim	muted	taggy.html#muted,string	proc muted(value: string)		648
-nim	name	taggy.html#name,string	proc name(value: string)		649
-nim	novalidate	taggy.html#novalidate,string	proc novalidate(value: string)		650
-nim	open	taggy.html#open,string	proc open(value: string)		651
-nim	optimum	taggy.html#optimum,string	proc optimum(value: string)		652
-nim	pattern	taggy.html#pattern,string	proc pattern(value: string)		653
-nim	placeholder	taggy.html#placeholder,string	proc placeholder(value: string)		654
-nim	poster	taggy.html#poster,string	proc poster(value: string)		655
-nim	preload	taggy.html#preload,string	proc preload(value: string)		656
-nim	readonly	taggy.html#readonly,string	proc readonly(value: string)		657
-nim	rel	taggy.html#rel,string	proc rel(value: string)		658
-nim	required	taggy.html#required,string	proc required(value: string)		659
-nim	reversed	taggy.html#reversed,string	proc reversed(value: string)		660
-nim	role	taggy.html#role,string	proc role(value: string)		661
-nim	rows	taggy.html#rows,string	proc rows(value: string)		662
-nim	rowspan	taggy.html#rowspan,string	proc rowspan(value: string)		663
-nim	sandbox	taggy.html#sandbox,string	proc sandbox(value: string)		664
-nim	scope	taggy.html#scope,string	proc scope(value: string)		665
-nim	selected	taggy.html#selected,string	proc selected(value: string)		666
-nim	shape	taggy.html#shape,string	proc shape(value: string)		667
-nim	size	taggy.html#size,string	proc size(value: string)		668
-nim	sizes	taggy.html#sizes,string	proc sizes(value: string)		669
-nim	span	taggy.html#span,string	proc span(value: string)		670
-nim	spellcheck	taggy.html#spellcheck,string	proc spellcheck(value: string)		671
-nim	src	taggy.html#src,string	proc src(value: string)		672
-nim	srcdoc	taggy.html#srcdoc,string	proc srcdoc(value: string)		673
-nim	srclang	taggy.html#srclang,string	proc srclang(value: string)		674
-nim	srcset	taggy.html#srcset,string	proc srcset(value: string)		675
-nim	start	taggy.html#start,string	proc start(value: string)		676
-nim	step	taggy.html#step,string	proc step(value: string)		677
-nim	style	taggy.html#style,string	proc style(value: string)		678
-nim	tabindex	taggy.html#tabindex,string	proc tabindex(value: string)		679
-nim	tabindex	taggy.html#tabindex,SomeInteger	proc tabindex(value: SomeInteger)		680
-nim	target	taggy.html#target,string	proc target(value: string)		681
-nim	title	taggy.html#title,string	proc title(value: string)		682
-nim	translate	taggy.html#translate,string	proc translate(value: string)		683
-nim	ttype	taggy.html#ttype,string	proc ttype(value: string)		684
-nim	usemap	taggy.html#usemap,string	proc usemap(value: string)		685
-nim	value	taggy.html#value,string	proc value(value: string)		686
-nim	attrWidth	taggy.html#attrWidth,string	proc attrWidth(value: string)		687
-nim	wrap	taggy.html#wrap,string	proc wrap(value: string)		688
-nim	crossOrigin	taggy.html#crossOrigin,string	proc crossOrigin(value: string)		689
-nim	onabort	taggy.html#onabort,string	proc onabort(value: string)		691
-nim	onafterprint	taggy.html#onafterprint,string	proc onafterprint(value: string)		692
-nim	onbeforeprint	taggy.html#onbeforeprint,string	proc onbeforeprint(value: string)		693
-nim	onbeforeunload	taggy.html#onbeforeunload,string	proc onbeforeunload(value: string)		694
-nim	onblur	taggy.html#onblur,string	proc onblur(value: string)		695
-nim	oncanplay	taggy.html#oncanplay,string	proc oncanplay(value: string)		696
-nim	oncanplaythrough	taggy.html#oncanplaythrough,string	proc oncanplaythrough(value: string)		697
-nim	onchange	taggy.html#onchange,string	proc onchange(value: string)		698
-nim	onclick	taggy.html#onclick,string	proc onclick(value: string)		699
-nim	oncontextmenu	taggy.html#oncontextmenu,string	proc oncontextmenu(value: string)		700
-nim	oncopy	taggy.html#oncopy,string	proc oncopy(value: string)		701
-nim	oncuechange	taggy.html#oncuechange,string	proc oncuechange(value: string)		702
-nim	oncut	taggy.html#oncut,string	proc oncut(value: string)		703
-nim	ondblclick	taggy.html#ondblclick,string	proc ondblclick(value: string)		704
-nim	ondrag	taggy.html#ondrag,string	proc ondrag(value: string)		705
-nim	ondragend	taggy.html#ondragend,string	proc ondragend(value: string)		706
-nim	ondragenter	taggy.html#ondragenter,string	proc ondragenter(value: string)		707
-nim	ondragleave	taggy.html#ondragleave,string	proc ondragleave(value: string)		708
-nim	ondragover	taggy.html#ondragover,string	proc ondragover(value: string)		709
-nim	ondragstart	taggy.html#ondragstart,string	proc ondragstart(value: string)		710
-nim	ondrop	taggy.html#ondrop,string	proc ondrop(value: string)		711
-nim	ondurationchange	taggy.html#ondurationchange,string	proc ondurationchange(value: string)		712
-nim	onemptied	taggy.html#onemptied,string	proc onemptied(value: string)		713
-nim	onended	taggy.html#onended,string	proc onended(value: string)		714
-nim	onerror	taggy.html#onerror,string	proc onerror(value: string)		715
-nim	onfocus	taggy.html#onfocus,string	proc onfocus(value: string)		716
-nim	onhashchange	taggy.html#onhashchange,string	proc onhashchange(value: string)		717
-nim	oninput	taggy.html#oninput,string	proc oninput(value: string)		718
-nim	oninvalid	taggy.html#oninvalid,string	proc oninvalid(value: string)		719
-nim	onkeydown	taggy.html#onkeydown,string	proc onkeydown(value: string)		720
-nim	onkeypress	taggy.html#onkeypress,string	proc onkeypress(value: string)		721
-nim	onkeyup	taggy.html#onkeyup,string	proc onkeyup(value: string)		722
-nim	onload	taggy.html#onload,string	proc onload(value: string)		723
-nim	onloadeddata	taggy.html#onloadeddata,string	proc onloadeddata(value: string)		724
-nim	onloadedmetadata	taggy.html#onloadedmetadata,string	proc onloadedmetadata(value: string)		725
-nim	onloadstart	taggy.html#onloadstart,string	proc onloadstart(value: string)		726
-nim	onmousedown	taggy.html#onmousedown,string	proc onmousedown(value: string)		727
-nim	onmousemove	taggy.html#onmousemove,string	proc onmousemove(value: string)		728
-nim	onmouseout	taggy.html#onmouseout,string	proc onmouseout(value: string)		729
-nim	onmouseover	taggy.html#onmouseover,string	proc onmouseover(value: string)		730
-nim	onmouseup	taggy.html#onmouseup,string	proc onmouseup(value: string)		731
-nim	onmousewheel	taggy.html#onmousewheel,string	proc onmousewheel(value: string)		732
-nim	onoffline	taggy.html#onoffline,string	proc onoffline(value: string)		733
-nim	ononline	taggy.html#ononline,string	proc ononline(value: string)		734
-nim	onpagehide	taggy.html#onpagehide,string	proc onpagehide(value: string)		735
-nim	onpageshow	taggy.html#onpageshow,string	proc onpageshow(value: string)		736
-nim	onpaste	taggy.html#onpaste,string	proc onpaste(value: string)		737
-nim	onpause	taggy.html#onpause,string	proc onpause(value: string)		738
-nim	onplay	taggy.html#onplay,string	proc onplay(value: string)		739
-nim	onplaying	taggy.html#onplaying,string	proc onplaying(value: string)		740
-nim	onpopstate	taggy.html#onpopstate,string	proc onpopstate(value: string)		741
-nim	onprogress	taggy.html#onprogress,string	proc onprogress(value: string)		742
-nim	onratechange	taggy.html#onratechange,string	proc onratechange(value: string)		743
-nim	onreset	taggy.html#onreset,string	proc onreset(value: string)		744
-nim	onresize	taggy.html#onresize,string	proc onresize(value: string)		745
-nim	onscroll	taggy.html#onscroll,string	proc onscroll(value: string)		746
-nim	onsearch	taggy.html#onsearch,string	proc onsearch(value: string)		747
-nim	onseeked	taggy.html#onseeked,string	proc onseeked(value: string)		748
-nim	onseeking	taggy.html#onseeking,string	proc onseeking(value: string)		749
-nim	onselect	taggy.html#onselect,string	proc onselect(value: string)		750
-nim	onstalled	taggy.html#onstalled,string	proc onstalled(value: string)		751
-nim	onstorage	taggy.html#onstorage,string	proc onstorage(value: string)		752
-nim	onsubmit	taggy.html#onsubmit,string	proc onsubmit(value: string)		753
-nim	onsuspend	taggy.html#onsuspend,string	proc onsuspend(value: string)		754
-nim	ontimeupdate	taggy.html#ontimeupdate,string	proc ontimeupdate(value: string)		755
-nim	ontoggle	taggy.html#ontoggle,string	proc ontoggle(value: string)		756
-nim	onunload	taggy.html#onunload,string	proc onunload(value: string)		757
-nim	onvolumechange	taggy.html#onvolumechange,string	proc onvolumechange(value: string)		758
-nim	onwaiting	taggy.html#onwaiting,string	proc onwaiting(value: string)		759
-nim	onwheel	taggy.html#onwheel,string	proc onwheel(value: string)		760
-nim	render	taggy.html#render.t	template render(inner): string		762
-nim	renderFragment	taggy.html#renderFragment.t	template renderFragment(inner): string		770
-nimgrp	zindex	taggy.html#zIndex-procs-all	proc		326
-nimgrp	marginleft	taggy.html#marginLeft-procs-all	proc		217
-nimgrp	bottom	taggy.html#bottom-procs-all	proc		111
-nimgrp	marginbottom	taggy.html#marginBottom-procs-all	proc		215
-nimgrp	paddingleft	taggy.html#paddingLeft-procs-all	proc		265
-nimgrp	lineheight	taggy.html#lineHeight-procs-all	proc		203
-nimgrp	left	taggy.html#left-procs-all	proc		199
-nimgrp	fontsize	taggy.html#fontSize-procs-all	proc		155
-nimgrp	fontweight	taggy.html#fontWeight-procs-all	proc		169
-nimgrp	marginright	taggy.html#marginRight-procs-all	proc		219
-nimgrp	borderradius	taggy.html#borderRadius-procs-all	proc		96
-nimgrp	paddingtop	taggy.html#paddingTop-procs-all	proc		269
-nimgrp	top	taggy.html#top-procs-all	proc		304
-nimgrp	minwidth	taggy.html#minWidth-procs-all	proc		240
-nimgrp	paddingright	taggy.html#paddingRight-procs-all	proc		267
-nimgrp	height	taggy.html#height-procs-all	proc		192
-nimgrp	paddingbottom	taggy.html#paddingBottom-procs-all	proc		263
-nimgrp	gap	taggy.html#gap-procs-all	proc		171
-nimgrp	minheight	taggy.html#minHeight-procs-all	proc		238
-nimgrp	tabindex	taggy.html#tabindex-procs-all	proc		679
-nimgrp	opacity	taggy.html#opacity-procs-all	proc		245
-nimgrp	right	taggy.html#right-procs-all	proc		282
-nimgrp	maxheight	taggy.html#maxHeight-procs-all	proc		234
-nimgrp	margin	taggy.html#margin-procs-all	proc		211
-nimgrp	padding	taggy.html#padding-procs-all	proc		259
-nimgrp	width	taggy.html#width-procs-all	proc		320
-nimgrp	margintop	taggy.html#marginTop-procs-all	proc		221
-nimgrp	zoom	taggy.html#zoom-procs-all	proc		328
-nimgrp	maxwidth	taggy.html#maxWidth-procs-all	proc		236
-nimgrp	pre	taggy.html#pre-templates-all	template		446
-nimgrp	optgroup	taggy.html#optgroup-templates-all	template		442
-nimgrp	section	taggy.html#section-templates-all	template		452
-nimgrp	form	taggy.html#form-templates-all	template		410
-nimgrp	meta	taggy.html#meta-templates-all	template		436
-nimgrp	link	taggy.html#link-templates-all	template		432
-nimgrp	colgroup	taggy.html#colgroup-templates-all	template		395
-nimgrp	label	taggy.html#label-templates-all	template		429
-nimgrp	span	taggy.html#span-templates-all	template		456
-nimgrp	tbody	taggy.html#tbody-templates-all	template		462
-nimgrp	b	taggy.html#b-templates-all	template		380
-nimgrp	article	taggy.html#article-templates-all	template		377
-nimgrp	select	taggy.html#select-templates-all	template		453
-nimgrp	figure	taggy.html#figure-templates-all	template		407
-nimgrp	br	taggy.html#br-templates-all	template		387
-nimgrp	ol	taggy.html#ol-templates-all	template		441
-nimgrp	dl	taggy.html#dl-templates-all	template		401
-nimgrp	mark	taggy.html#mark-templates-all	template		435
-nimgrp	frameset	taggy.html#frameset-templates-all	template		412
-nimgrp	meter	taggy.html#meter-templates-all	template		437
-nimgrp	caption	taggy.html#caption-templates-all	template		390
-nimgrp	code	taggy.html#code-templates-all	template		393
-nimgrp	em	taggy.html#em-templates-all	template		403
-nimgrp	tfoot	taggy.html#tfoot-templates-all	template		465
-nimgrp	center	taggy.html#center-templates-all	template		391
-nimgrp	iframe	taggy.html#iframe-templates-all	template		424
-nimgrp	sup	taggy.html#sup-templates-all	template		460
-nimgrp	ul	taggy.html#ul-templates-all	template		472
-nimgrp	body	taggy.html#body-templates-all	template		386
-nimgrp	font	taggy.html#font-templates-all	template		408
-nimgrp	h3	taggy.html#h3-templates-all	template		417
-nimgrp	map	taggy.html#map-templates-all	template		434
-nimgrp	textarea	taggy.html#textarea-templates-all	template		464
-nimgrp	bdo	taggy.html#bdo-templates-all	template		383
-nimgrp	embed	taggy.html#embed-templates-all	template		404
-nimgrp	dd	taggy.html#dd-templates-all	template		397
-nimgrp	q	taggy.html#q-templates-all	template		448
-nimgrp	s	taggy.html#s-templates-all	template		449
-nimgrp	header	taggy.html#header-templates-all	template		414
-nimgrp	h1	taggy.html#h1-templates-all	template		415
-nimgrp	samp	taggy.html#samp-templates-all	template		450
-nimgrp	dfn	taggy.html#dfn-templates-all	template		399
-nimgrp	p	taggy.html#p-templates-all	template		444
-nimgrp	area	taggy.html#area-templates-all	template		376
-nimgrp	small	taggy.html#small-templates-all	template		454
-nimgrp	address	taggy.html#address-templates-all	template		374
-nimgrp	basefont	taggy.html#basefont-templates-all	template		382
-nimgrp	strong	taggy.html#strong-templates-all	template		458
-nimgrp	applet	taggy.html#applet-templates-all	template		375
-nimgrp	cite	taggy.html#cite-templates-all	template		392
-nimgrp	script	taggy.html#script-templates-all	template		451
-nimgrp	head	taggy.html#head-templates-all	template		413
-nimgrp	progress	taggy.html#progress-templates-all	template		447
-nimgrp	base	taggy.html#base-templates-all	template		381
-nimgrp	frame	taggy.html#frame-templates-all	template		411
-nimgrp	input	taggy.html#input-templates-all	template		426
-nimgrp	h6	taggy.html#h6-templates-all	template		420
-nimgrp	tr	taggy.html#tr-templates-all	template		470
-nimgrp	button	taggy.html#button-templates-all	template		388
-nimgrp	source	taggy.html#source-templates-all	template		455
-nimgrp	time	taggy.html#time-templates-all	template		468
-nimgrp	del	taggy.html#del-templates-all	template		398
-nimgrp	big	taggy.html#big-templates-all	template		384
-nimgrp	ins	taggy.html#ins-templates-all	template		427
-nimgrp	wbr	taggy.html#wbr-templates-all	template		475
-nimgrp	blockquote	taggy.html#blockquote-templates-all	template		385
-nimgrp	footer	taggy.html#footer-templates-all	template		409
-nimgrp	h2	taggy.html#h2-templates-all	template		416
-nimgrp	h5	taggy.html#h5-templates-all	template		419
-nimgrp	figcaption	taggy.html#figcaption-templates-all	template		406
-nimgrp	datalist	taggy.html#datalist-templates-all	template		396
-nimgrp	video	taggy.html#video-templates-all	template		474
-nimgrp	title	taggy.html#title-templates-all	template		469
-nimgrp	main	taggy.html#main-templates-all	template		433
-nimgrp	li	taggy.html#li-templates-all	template		431
-nimgrp	kbd	taggy.html#kbd-templates-all	template		428
-nimgrp	tdiv	taggy.html#tdiv-templates-all	template		400
-nimgrp	i	taggy.html#i-templates-all	template		423
-nimgrp	thead	taggy.html#thead-templates-all	template		467
-nimgrp	fieldset	taggy.html#fieldset-templates-all	template		405
-nimgrp	param	taggy.html#param-templates-all	template		445
-nimgrp	html	taggy.html#html-templates-all	template		422
-nimgrp	abbr	taggy.html#abbr-templates-all	template		372
-nimgrp	audio	taggy.html#audio-templates-all	template		379
-nimgrp	tvar	taggy.html#tvar-templates-all	template		473
-nimgrp	noscript	taggy.html#noscript-templates-all	template		439
-nimgrp	aside	taggy.html#aside-templates-all	template		378
-nimgrp	u	taggy.html#u-templates-all	template		471
-nimgrp	sub	taggy.html#sub-templates-all	template		459
-nimgrp	tobject	taggy.html#tobject-templates-all	template		440
-nimgrp	dt	taggy.html#dt-templates-all	template		402
-nimgrp	img	taggy.html#img-templates-all	template		425
-nimgrp	a	taggy.html#a-templates-all	template		371
-nimgrp	hr	taggy.html#hr-templates-all	template		421
-nimgrp	strike	taggy.html#strike-templates-all	template		457
-nimgrp	th	taggy.html#th-templates-all	template		466
-nimgrp	h4	taggy.html#h4-templates-all	template		418
-nimgrp	option	taggy.html#option-templates-all	template		443
-nimgrp	acronym	taggy.html#acronym-templates-all	template		373
-nimgrp	td	taggy.html#td-templates-all	template		463
-nimgrp	canvas	taggy.html#canvas-templates-all	template		389
-nimgrp	col	taggy.html#col-templates-all	template		394
-nimgrp	legend	taggy.html#legend-templates-all	template		430
-nimgrp	table	taggy.html#table-templates-all	template		461
-nimgrp	nav	taggy.html#nav-templates-all	template		438
+nim	say	taggy.html#say,string	proc say(s: string)		29
+nim	sayCss	taggy.html#sayCss,string	proc sayCss(s: string)		32
+nim	styleSheet	taggy.html#styleSheet.t	template styleSheet(inner)		35
+nim	css	taggy.html#css.t,string,	template css(selector: string; inner)		45
+nim	cssProp	taggy.html#cssProp,string,string	proc cssProp(name, value: string)		55
+nim	accentColor	taggy.html#accentColor,string	proc accentColor(value: string)		57
+nim	alignContent	taggy.html#alignContent,string	proc alignContent(value: string)		58
+nim	alignItems	taggy.html#alignItems,string	proc alignItems(value: string)		59
+nim	alignSelf	taggy.html#alignSelf,string	proc alignSelf(value: string)		60
+nim	all	taggy.html#all,string	proc all(value: string)		61
+nim	animation	taggy.html#animation,string	proc animation(value: string)		62
+nim	animationDelay	taggy.html#animationDelay,string	proc animationDelay(value: string)		63
+nim	animationDirection	taggy.html#animationDirection,string	proc animationDirection(value: string)		64
+nim	animationDuration	taggy.html#animationDuration,string	proc animationDuration(value: string)		65
+nim	animationFillMode	taggy.html#animationFillMode,string	proc animationFillMode(value: string)		66
+nim	animationIterationCount	taggy.html#animationIterationCount,string	proc animationIterationCount(value: string)		67
+nim	animationName	taggy.html#animationName,string	proc animationName(value: string)		68
+nim	animationPlayState	taggy.html#animationPlayState,string	proc animationPlayState(value: string)		69
+nim	animationTimingFunction	taggy.html#animationTimingFunction,string	proc animationTimingFunction(value: string)		70
+nim	backdropFilter	taggy.html#backdropFilter,string	proc backdropFilter(value: string)		71
+nim	backfaceVisibility	taggy.html#backfaceVisibility,string	proc backfaceVisibility(value: string)		72
+nim	background	taggy.html#background,string	proc background(value: string)		73
+nim	backgroundAttachment	taggy.html#backgroundAttachment,string	proc backgroundAttachment(value: string)		74
+nim	backgroundBlendMode	taggy.html#backgroundBlendMode,string	proc backgroundBlendMode(value: string)		75
+nim	backgroundClip	taggy.html#backgroundClip,string	proc backgroundClip(value: string)		76
+nim	backgroundColor	taggy.html#backgroundColor,string	proc backgroundColor(value: string)		77
+nim	backgroundImage	taggy.html#backgroundImage,string	proc backgroundImage(value: string)		78
+nim	backgroundOrigin	taggy.html#backgroundOrigin,string	proc backgroundOrigin(value: string)		79
+nim	backgroundPosition	taggy.html#backgroundPosition,string	proc backgroundPosition(value: string)		80
+nim	backgroundRepeat	taggy.html#backgroundRepeat,string	proc backgroundRepeat(value: string)		81
+nim	backgroundSize	taggy.html#backgroundSize,string	proc backgroundSize(value: string)		82
+nim	border	taggy.html#border,string	proc border(value: string)		83
+nim	borderBottom	taggy.html#borderBottom,string	proc borderBottom(value: string)		84
+nim	borderBottomColor	taggy.html#borderBottomColor,string	proc borderBottomColor(value: string)		85
+nim	borderBottomLeftRadius	taggy.html#borderBottomLeftRadius,string	proc borderBottomLeftRadius(value: string)		86
+nim	borderBottomRightRadius	taggy.html#borderBottomRightRadius,string	proc borderBottomRightRadius(value: string)		87
+nim	borderBottomStyle	taggy.html#borderBottomStyle,string	proc borderBottomStyle(value: string)		88
+nim	borderBottomWidth	taggy.html#borderBottomWidth,string	proc borderBottomWidth(value: string)		89
+nim	borderCollapse	taggy.html#borderCollapse,string	proc borderCollapse(value: string)		90
+nim	borderColor	taggy.html#borderColor,string	proc borderColor(value: string)		91
+nim	borderImage	taggy.html#borderImage,string	proc borderImage(value: string)		92
+nim	borderImageOutset	taggy.html#borderImageOutset,string	proc borderImageOutset(value: string)		93
+nim	borderImageRepeat	taggy.html#borderImageRepeat,string	proc borderImageRepeat(value: string)		94
+nim	borderImageSlice	taggy.html#borderImageSlice,string	proc borderImageSlice(value: string)		95
+nim	borderImageSource	taggy.html#borderImageSource,string	proc borderImageSource(value: string)		96
+nim	borderImageWidth	taggy.html#borderImageWidth,string	proc borderImageWidth(value: string)		97
+nim	borderLeft	taggy.html#borderLeft,string	proc borderLeft(value: string)		98
+nim	borderLeftColor	taggy.html#borderLeftColor,string	proc borderLeftColor(value: string)		99
+nim	borderLeftStyle	taggy.html#borderLeftStyle,string	proc borderLeftStyle(value: string)		100
+nim	borderLeftWidth	taggy.html#borderLeftWidth,string	proc borderLeftWidth(value: string)		101
+nim	borderRadius	taggy.html#borderRadius,string	proc borderRadius(value: string)		102
+nim	borderRadius	taggy.html#borderRadius,SomeNumber	proc borderRadius(value: SomeNumber)		103
+nim	borderRight	taggy.html#borderRight,string	proc borderRight(value: string)		104
+nim	borderRightColor	taggy.html#borderRightColor,string	proc borderRightColor(value: string)		105
+nim	borderRightStyle	taggy.html#borderRightStyle,string	proc borderRightStyle(value: string)		106
+nim	borderRightWidth	taggy.html#borderRightWidth,string	proc borderRightWidth(value: string)		107
+nim	borderSpacing	taggy.html#borderSpacing,string	proc borderSpacing(value: string)		108
+nim	borderStyle	taggy.html#borderStyle,string	proc borderStyle(value: string)		109
+nim	borderTop	taggy.html#borderTop,string	proc borderTop(value: string)		110
+nim	borderTopColor	taggy.html#borderTopColor,string	proc borderTopColor(value: string)		111
+nim	borderTopLeftRadius	taggy.html#borderTopLeftRadius,string	proc borderTopLeftRadius(value: string)		112
+nim	borderTopRightRadius	taggy.html#borderTopRightRadius,string	proc borderTopRightRadius(value: string)		113
+nim	borderTopStyle	taggy.html#borderTopStyle,string	proc borderTopStyle(value: string)		114
+nim	borderTopWidth	taggy.html#borderTopWidth,string	proc borderTopWidth(value: string)		115
+nim	borderWidth	taggy.html#borderWidth,string	proc borderWidth(value: string)		116
+nim	bottom	taggy.html#bottom,string	proc bottom(value: string)		117
+nim	bottom	taggy.html#bottom,SomeNumber	proc bottom(value: SomeNumber)		118
+nim	boxDecorationBreak	taggy.html#boxDecorationBreak,string	proc boxDecorationBreak(value: string)		119
+nim	boxShadow	taggy.html#boxShadow,string	proc boxShadow(value: string)		120
+nim	boxSizing	taggy.html#boxSizing,string	proc boxSizing(value: string)		121
+nim	breakAfter	taggy.html#breakAfter,string	proc breakAfter(value: string)		122
+nim	breakBefore	taggy.html#breakBefore,string	proc breakBefore(value: string)		123
+nim	breakInside	taggy.html#breakInside,string	proc breakInside(value: string)		124
+nim	captionSide	taggy.html#captionSide,string	proc captionSide(value: string)		125
+nim	caretColor	taggy.html#caretColor,string	proc caretColor(value: string)		126
+nim	clear	taggy.html#clear,string	proc clear(value: string)		127
+nim	clip	taggy.html#clip,string	proc clip(value: string)		128
+nim	color	taggy.html#color,string	proc color(value: string)		129
+nim	columnCount	taggy.html#columnCount,string	proc columnCount(value: string)		130
+nim	columnFill	taggy.html#columnFill,string	proc columnFill(value: string)		131
+nim	columnGap	taggy.html#columnGap,string	proc columnGap(value: string)		132
+nim	columnRule	taggy.html#columnRule,string	proc columnRule(value: string)		133
+nim	columnRuleColor	taggy.html#columnRuleColor,string	proc columnRuleColor(value: string)		134
+nim	columnRuleStyle	taggy.html#columnRuleStyle,string	proc columnRuleStyle(value: string)		135
+nim	columnRuleWidth	taggy.html#columnRuleWidth,string	proc columnRuleWidth(value: string)		136
+nim	columnSpan	taggy.html#columnSpan,string	proc columnSpan(value: string)		137
+nim	columnWidth	taggy.html#columnWidth,string	proc columnWidth(value: string)		138
+nim	columns	taggy.html#columns,string	proc columns(value: string)		139
+nim	content	taggy.html#content,string	proc content(value: string)		140
+nim	counterIncrement	taggy.html#counterIncrement,string	proc counterIncrement(value: string)		141
+nim	counterReset	taggy.html#counterReset,string	proc counterReset(value: string)		142
+nim	cursor	taggy.html#cursor,string	proc cursor(value: string)		143
+nim	direction	taggy.html#direction,string	proc direction(value: string)		144
+nim	display	taggy.html#display,string	proc display(value: string)		145
+nim	emptyCells	taggy.html#emptyCells,string	proc emptyCells(value: string)		146
+nim	filter	taggy.html#filter,string	proc filter(value: string)		147
+nim	flex	taggy.html#flex,string	proc flex(value: string)		148
+nim	flexBasis	taggy.html#flexBasis,string	proc flexBasis(value: string)		149
+nim	flexDirection	taggy.html#flexDirection,string	proc flexDirection(value: string)		150
+nim	flexFlow	taggy.html#flexFlow,string	proc flexFlow(value: string)		151
+nim	flexGrow	taggy.html#flexGrow,string	proc flexGrow(value: string)		152
+nim	flexShrink	taggy.html#flexShrink,string	proc flexShrink(value: string)		153
+nim	flexWrap	taggy.html#flexWrap,string	proc flexWrap(value: string)		154
+nim	tfloat	taggy.html#tfloat,string	proc tfloat(value: string)		155
+nim	font	taggy.html#font,string	proc font(value: string)		156
+nim	fontFamily	taggy.html#fontFamily,string	proc fontFamily(value: string)		157
+nim	fontFeatureSettings	taggy.html#fontFeatureSettings,string	proc fontFeatureSettings(value: string)		158
+nim	fontKerning	taggy.html#fontKerning,string	proc fontKerning(value: string)		159
+nim	fontLanguageOverride	taggy.html#fontLanguageOverride,string	proc fontLanguageOverride(value: string)		160
+nim	fontSize	taggy.html#fontSize,string	proc fontSize(value: string)		161
+nim	fontSize	taggy.html#fontSize,SomeNumber	proc fontSize(value: SomeNumber)		162
+nim	fontSizeAdjust	taggy.html#fontSizeAdjust,string	proc fontSizeAdjust(value: string)		164
+nim	fontStretch	taggy.html#fontStretch,string	proc fontStretch(value: string)		165
+nim	fontStyle	taggy.html#fontStyle,string	proc fontStyle(value: string)		166
+nim	fontSynthesis	taggy.html#fontSynthesis,string	proc fontSynthesis(value: string)		167
+nim	fontVariant	taggy.html#fontVariant,string	proc fontVariant(value: string)		168
+nim	fontVariantAlternates	taggy.html#fontVariantAlternates,string	proc fontVariantAlternates(value: string)		169
+nim	fontVariantCaps	taggy.html#fontVariantCaps,string	proc fontVariantCaps(value: string)		170
+nim	fontVariantEastAsian	taggy.html#fontVariantEastAsian,string	proc fontVariantEastAsian(value: string)		171
+nim	fontVariantLigatures	taggy.html#fontVariantLigatures,string	proc fontVariantLigatures(value: string)		172
+nim	fontVariantNumeric	taggy.html#fontVariantNumeric,string	proc fontVariantNumeric(value: string)		173
+nim	fontVariantPosition	taggy.html#fontVariantPosition,string	proc fontVariantPosition(value: string)		174
+nim	fontWeight	taggy.html#fontWeight,string	proc fontWeight(value: string)		175
+nim	fontWeight	taggy.html#fontWeight,SomeNumber	proc fontWeight(value: SomeNumber)		176
+nim	gap	taggy.html#gap,string	proc gap(value: string)		177
+nim	gap	taggy.html#gap,SomeNumber	proc gap(value: SomeNumber)		178
+nim	grid	taggy.html#grid,string	proc grid(value: string)		179
+nim	gridArea	taggy.html#gridArea,string	proc gridArea(value: string)		180
+nim	gridAutoColumns	taggy.html#gridAutoColumns,string	proc gridAutoColumns(value: string)		181
+nim	gridAutoFlow	taggy.html#gridAutoFlow,string	proc gridAutoFlow(value: string)		182
+nim	gridAutoRows	taggy.html#gridAutoRows,string	proc gridAutoRows(value: string)		183
+nim	gridColumn	taggy.html#gridColumn,string	proc gridColumn(value: string)		184
+nim	gridColumnEnd	taggy.html#gridColumnEnd,string	proc gridColumnEnd(value: string)		185
+nim	gridColumnGap	taggy.html#gridColumnGap,string	proc gridColumnGap(value: string)		186
+nim	gridColumnStart	taggy.html#gridColumnStart,string	proc gridColumnStart(value: string)		187
+nim	gridGap	taggy.html#gridGap,string	proc gridGap(value: string)		188
+nim	gridRow	taggy.html#gridRow,string	proc gridRow(value: string)		189
+nim	gridRowEnd	taggy.html#gridRowEnd,string	proc gridRowEnd(value: string)		190
+nim	gridRowGap	taggy.html#gridRowGap,string	proc gridRowGap(value: string)		191
+nim	gridRowStart	taggy.html#gridRowStart,string	proc gridRowStart(value: string)		192
+nim	gridTemplate	taggy.html#gridTemplate,string	proc gridTemplate(value: string)		193
+nim	gridTemplateAreas	taggy.html#gridTemplateAreas,string	proc gridTemplateAreas(value: string)		194
+nim	gridTemplateColumns	taggy.html#gridTemplateColumns,string	proc gridTemplateColumns(value: string)		195
+nim	gridTemplateRows	taggy.html#gridTemplateRows,string	proc gridTemplateRows(value: string)		196
+nim	hangingPunctuation	taggy.html#hangingPunctuation,string	proc hangingPunctuation(value: string)		197
+nim	height	taggy.html#height,string	proc height(value: string)		198
+nim	height	taggy.html#height,int	proc height(value: int)		199
+nim	hyphens	taggy.html#hyphens,string	proc hyphens(value: string)		200
+nim	imageRendering	taggy.html#imageRendering,string	proc imageRendering(value: string)		201
+nim	isolation	taggy.html#isolation,string	proc isolation(value: string)		202
+nim	justifyContent	taggy.html#justifyContent,string	proc justifyContent(value: string)		203
+nim	keyframes	taggy.html#keyframes,string	proc keyframes(value: string)		204
+nim	left	taggy.html#left,string	proc left(value: string)		205
+nim	left	taggy.html#left,SomeNumber	proc left(value: SomeNumber)		206
+nim	letterSpacing	taggy.html#letterSpacing,string	proc letterSpacing(value: string)		207
+nim	lineBreak	taggy.html#lineBreak,string	proc lineBreak(value: string)		208
+nim	lineHeight	taggy.html#lineHeight,string	proc lineHeight(value: string)		209
+nim	lineHeight	taggy.html#lineHeight,SomeNumber	proc lineHeight(value: SomeNumber)		210
+nim	listStyle	taggy.html#listStyle,string	proc listStyle(value: string)		212
+nim	listStyleImage	taggy.html#listStyleImage,string	proc listStyleImage(value: string)		213
+nim	listStylePosition	taggy.html#listStylePosition,string	proc listStylePosition(value: string)		214
+nim	listStyleType	taggy.html#listStyleType,string	proc listStyleType(value: string)		215
+nim	margin	taggy.html#margin,string	proc margin(value: string)		217
+nim	margin	taggy.html#margin,SomeNumber	proc margin(value: SomeNumber)		218
+nim	margin	taggy.html#margin,SomeNumber,SomeNumber	proc margin(vertical, horizontal: SomeNumber)		219
+nim	margin	taggy.html#margin,SomeNumber,SomeNumber,SomeNumber,SomeNumber	proc margin(top, right, bottom, left: SomeNumber)		220
+nim	marginBottom	taggy.html#marginBottom,string	proc marginBottom(value: string)		221
+nim	marginBottom	taggy.html#marginBottom,SomeNumber	proc marginBottom(value: SomeNumber)		222
+nim	marginLeft	taggy.html#marginLeft,string	proc marginLeft(value: string)		223
+nim	marginLeft	taggy.html#marginLeft,SomeNumber	proc marginLeft(value: SomeNumber)		224
+nim	marginRight	taggy.html#marginRight,string	proc marginRight(value: string)		225
+nim	marginRight	taggy.html#marginRight,SomeNumber	proc marginRight(value: SomeNumber)		226
+nim	marginTop	taggy.html#marginTop,string	proc marginTop(value: string)		227
+nim	marginTop	taggy.html#marginTop,SomeNumber	proc marginTop(value: SomeNumber)		228
+nim	mask	taggy.html#mask,string	proc mask(value: string)		230
+nim	maskClip	taggy.html#maskClip,string	proc maskClip(value: string)		231
+nim	maskComposite	taggy.html#maskComposite,string	proc maskComposite(value: string)		232
+nim	maskImage	taggy.html#maskImage,string	proc maskImage(value: string)		233
+nim	maskMode	taggy.html#maskMode,string	proc maskMode(value: string)		234
+nim	maskOrigin	taggy.html#maskOrigin,string	proc maskOrigin(value: string)		235
+nim	maskPosition	taggy.html#maskPosition,string	proc maskPosition(value: string)		236
+nim	maskRepeat	taggy.html#maskRepeat,string	proc maskRepeat(value: string)		237
+nim	maskSize	taggy.html#maskSize,string	proc maskSize(value: string)		238
+nim	maskType	taggy.html#maskType,string	proc maskType(value: string)		239
+nim	maxHeight	taggy.html#maxHeight,string	proc maxHeight(value: string)		240
+nim	maxHeight	taggy.html#maxHeight,SomeNumber	proc maxHeight(value: SomeNumber)		241
+nim	maxWidth	taggy.html#maxWidth,string	proc maxWidth(value: string)		242
+nim	maxWidth	taggy.html#maxWidth,SomeNumber	proc maxWidth(value: SomeNumber)		243
+nim	minHeight	taggy.html#minHeight,string	proc minHeight(value: string)		244
+nim	minHeight	taggy.html#minHeight,SomeNumber	proc minHeight(value: SomeNumber)		245
+nim	minWidth	taggy.html#minWidth,string	proc minWidth(value: string)		246
+nim	minWidth	taggy.html#minWidth,SomeNumber	proc minWidth(value: SomeNumber)		247
+nim	mixBlendMode	taggy.html#mixBlendMode,string	proc mixBlendMode(value: string)		248
+nim	objectFit	taggy.html#objectFit,string	proc objectFit(value: string)		249
+nim	objectPosition	taggy.html#objectPosition,string	proc objectPosition(value: string)		250
+nim	opacity	taggy.html#opacity,string	proc opacity(value: string)		251
+nim	opacity	taggy.html#opacity,SomeNumber	proc opacity(value: SomeNumber)		252
+nim	order	taggy.html#order,string	proc order(value: string)		253
+nim	orphans	taggy.html#orphans,string	proc orphans(value: string)		254
+nim	outline	taggy.html#outline,string	proc outline(value: string)		255
+nim	outlineColor	taggy.html#outlineColor,string	proc outlineColor(value: string)		256
+nim	outlineOffset	taggy.html#outlineOffset,string	proc outlineOffset(value: string)		257
+nim	outlineStyle	taggy.html#outlineStyle,string	proc outlineStyle(value: string)		258
+nim	outlineWidth	taggy.html#outlineWidth,string	proc outlineWidth(value: string)		259
+nim	overflow	taggy.html#overflow,string	proc overflow(value: string)		260
+nim	overflowWrap	taggy.html#overflowWrap,string	proc overflowWrap(value: string)		261
+nim	overflowX	taggy.html#overflowX,string	proc overflowX(value: string)		262
+nim	overflowY	taggy.html#overflowY,string	proc overflowY(value: string)		263
+nim	padding	taggy.html#padding,string	proc padding(value: string)		265
+nim	padding	taggy.html#padding,SomeNumber	proc padding(value: SomeNumber)		266
+nim	padding	taggy.html#padding,SomeNumber,SomeNumber	proc padding(vertical, horizontal: SomeNumber)		267
+nim	padding	taggy.html#padding,SomeNumber,SomeNumber,SomeNumber,SomeNumber	proc padding(top, right, bottom, left: SomeNumber)		268
+nim	paddingBottom	taggy.html#paddingBottom,string	proc paddingBottom(value: string)		269
+nim	paddingBottom	taggy.html#paddingBottom,SomeNumber	proc paddingBottom(value: SomeNumber)		270
+nim	paddingLeft	taggy.html#paddingLeft,string	proc paddingLeft(value: string)		271
+nim	paddingLeft	taggy.html#paddingLeft,SomeNumber	proc paddingLeft(value: SomeNumber)		272
+nim	paddingRight	taggy.html#paddingRight,string	proc paddingRight(value: string)		273
+nim	paddingRight	taggy.html#paddingRight,SomeNumber	proc paddingRight(value: SomeNumber)		274
+nim	paddingTop	taggy.html#paddingTop,string	proc paddingTop(value: string)		275
+nim	paddingTop	taggy.html#paddingTop,SomeNumber	proc paddingTop(value: SomeNumber)		276
+nim	pageBreakAfter	taggy.html#pageBreakAfter,string	proc pageBreakAfter(value: string)		278
+nim	pageBreakBefore	taggy.html#pageBreakBefore,string	proc pageBreakBefore(value: string)		279
+nim	pageBreakInside	taggy.html#pageBreakInside,string	proc pageBreakInside(value: string)		280
+nim	perspective	taggy.html#perspective,string	proc perspective(value: string)		281
+nim	perspectiveOrigin	taggy.html#perspectiveOrigin,string	proc perspectiveOrigin(value: string)		282
+nim	pointerEvents	taggy.html#pointerEvents,string	proc pointerEvents(value: string)		283
+nim	position	taggy.html#position,string	proc position(value: string)		284
+nim	property	taggy.html#property,string	proc property(value: string)		285
+nim	quotes	taggy.html#quotes,string	proc quotes(value: string)		286
+nim	resize	taggy.html#resize,string	proc resize(value: string)		287
+nim	right	taggy.html#right,string	proc right(value: string)		288
+nim	right	taggy.html#right,SomeNumber	proc right(value: SomeNumber)		289
+nim	rowGap	taggy.html#rowGap,string	proc rowGap(value: string)		290
+nim	scrollBehavior	taggy.html#scrollBehavior,string	proc scrollBehavior(value: string)		291
+nim	tabSize	taggy.html#tabSize,string	proc tabSize(value: string)		292
+nim	tableLayout	taggy.html#tableLayout,string	proc tableLayout(value: string)		293
+nim	textAlign	taggy.html#textAlign,string	proc textAlign(value: string)		294
+nim	textAlignLast	taggy.html#textAlignLast,string	proc textAlignLast(value: string)		295
+nim	textCombineUpright	taggy.html#textCombineUpright,string	proc textCombineUpright(value: string)		296
+nim	textDecoration	taggy.html#textDecoration,string	proc textDecoration(value: string)		297
+nim	textDecorationColor	taggy.html#textDecorationColor,string	proc textDecorationColor(value: string)		298
+nim	textDecorationLine	taggy.html#textDecorationLine,string	proc textDecorationLine(value: string)		299
+nim	textDecorationStyle	taggy.html#textDecorationStyle,string	proc textDecorationStyle(value: string)		300
+nim	textDecorationThickness	taggy.html#textDecorationThickness,string	proc textDecorationThickness(value: string)		301
+nim	textEmphasis	taggy.html#textEmphasis,string	proc textEmphasis(value: string)		302
+nim	textIndent	taggy.html#textIndent,string	proc textIndent(value: string)		303
+nim	textJustify	taggy.html#textJustify,string	proc textJustify(value: string)		304
+nim	textOrientation	taggy.html#textOrientation,string	proc textOrientation(value: string)		305
+nim	textOverflow	taggy.html#textOverflow,string	proc textOverflow(value: string)		306
+nim	textShadow	taggy.html#textShadow,string	proc textShadow(value: string)		307
+nim	textTransform	taggy.html#textTransform,string	proc textTransform(value: string)		308
+nim	textUnderlinePosition	taggy.html#textUnderlinePosition,string	proc textUnderlinePosition(value: string)		309
+nim	top	taggy.html#top,string	proc top(value: string)		310
+nim	top	taggy.html#top,SomeNumber	proc top(value: SomeNumber)		311
+nim	transform	taggy.html#transform,string	proc transform(value: string)		312
+nim	transformOrigin	taggy.html#transformOrigin,string	proc transformOrigin(value: string)		313
+nim	transformStyle	taggy.html#transformStyle,string	proc transformStyle(value: string)		314
+nim	transition	taggy.html#transition,string	proc transition(value: string)		315
+nim	transitionDelay	taggy.html#transitionDelay,string	proc transitionDelay(value: string)		316
+nim	transitionDuration	taggy.html#transitionDuration,string	proc transitionDuration(value: string)		317
+nim	transitionProperty	taggy.html#transitionProperty,string	proc transitionProperty(value: string)		318
+nim	transitionTimingFunction	taggy.html#transitionTimingFunction,string	proc transitionTimingFunction(value: string)		319
+nim	unicodeBidi	taggy.html#unicodeBidi,string	proc unicodeBidi(value: string)		320
+nim	userSelect	taggy.html#userSelect,string	proc userSelect(value: string)		321
+nim	verticalAlign	taggy.html#verticalAlign,string	proc verticalAlign(value: string)		322
+nim	visibility	taggy.html#visibility,string	proc visibility(value: string)		323
+nim	whiteSpace	taggy.html#whiteSpace,string	proc whiteSpace(value: string)		324
+nim	widows	taggy.html#widows,string	proc widows(value: string)		325
+nim	width	taggy.html#width,string	proc width(value: string)		326
+nim	width	taggy.html#width,SomeNumber	proc width(value: SomeNumber)		327
+nim	wordBreak	taggy.html#wordBreak,string	proc wordBreak(value: string)		328
+nim	wordSpacing	taggy.html#wordSpacing,string	proc wordSpacing(value: string)		329
+nim	wordWrap	taggy.html#wordWrap,string	proc wordWrap(value: string)		330
+nim	writingMode	taggy.html#writingMode,string	proc writingMode(value: string)		331
+nim	zIndex	taggy.html#zIndex,string	proc zIndex(value: string)		332
+nim	zIndex	taggy.html#zIndex,SomeNumber	proc zIndex(value: SomeNumber)		333
+nim	zoom	taggy.html#zoom,string	proc zoom(value: string)		334
+nim	zoom	taggy.html#zoom,SomeNumber	proc zoom(value: SomeNumber)		335
+nim	tag	taggy.html#tag.t,string,string,	template tag(selector, name: string; inner)		367
+nim	a	taggy.html#a.t,string,	template a(selector = ""; inner)		377
+nim	abbr	taggy.html#abbr.t,string,	template abbr(selector = ""; inner)		378
+nim	acronym	taggy.html#acronym.t,string,	template acronym(selector = ""; inner)		379
+nim	address	taggy.html#address.t,string,	template address(selector = ""; inner)		380
+nim	applet	taggy.html#applet.t,string,	template applet(selector = ""; inner)		381
+nim	area	taggy.html#area.t,string,	template area(selector = ""; inner)		382
+nim	article	taggy.html#article.t,string,	template article(selector = ""; inner)		383
+nim	aside	taggy.html#aside.t,string,	template aside(selector = ""; inner)		384
+nim	audio	taggy.html#audio.t,string,	template audio(selector = ""; inner)		385
+nim	b	taggy.html#b.t,string,	template b(selector = ""; inner)		386
+nim	base	taggy.html#base.t,string,	template base(selector = ""; inner)		387
+nim	basefont	taggy.html#basefont.t,string,	template basefont(selector = ""; inner)		388
+nim	bdo	taggy.html#bdo.t,string,	template bdo(selector = ""; inner)		389
+nim	big	taggy.html#big.t,string,	template big(selector = ""; inner)		390
+nim	blockquote	taggy.html#blockquote.t,string,	template blockquote(selector = ""; inner)		391
+nim	body	taggy.html#body.t,string,	template body(selector = ""; inner)		392
+nim	br	taggy.html#br.t,string,	template br(selector = ""; inner)		393
+nim	button	taggy.html#button.t,string,	template button(selector = ""; inner)		394
+nim	canvas	taggy.html#canvas.t,string,	template canvas(selector = ""; inner)		395
+nim	caption	taggy.html#caption.t,string,	template caption(selector = ""; inner)		396
+nim	center	taggy.html#center.t,string,	template center(selector = ""; inner)		397
+nim	cite	taggy.html#cite.t,string,	template cite(selector = ""; inner)		398
+nim	code	taggy.html#code.t,string,	template code(selector = ""; inner)		399
+nim	col	taggy.html#col.t,string,	template col(selector = ""; inner)		400
+nim	colgroup	taggy.html#colgroup.t,string,	template colgroup(selector = ""; inner)		401
+nim	datalist	taggy.html#datalist.t,string,	template datalist(selector = ""; inner)		402
+nim	dd	taggy.html#dd.t,string,	template dd(selector = ""; inner)		403
+nim	del	taggy.html#del.t,string,	template del(selector = ""; inner)		404
+nim	dfn	taggy.html#dfn.t,string,	template dfn(selector = ""; inner)		405
+nim	tdiv	taggy.html#tdiv.t,string,	template tdiv(selector = ""; inner)		406
+nim	dl	taggy.html#dl.t,string,	template dl(selector = ""; inner)		407
+nim	dt	taggy.html#dt.t,string,	template dt(selector = ""; inner)		408
+nim	em	taggy.html#em.t,string,	template em(selector = ""; inner)		409
+nim	embed	taggy.html#embed.t,string,	template embed(selector = ""; inner)		410
+nim	fieldset	taggy.html#fieldset.t,string,	template fieldset(selector = ""; inner)		411
+nim	figcaption	taggy.html#figcaption.t,string,	template figcaption(selector = ""; inner)		412
+nim	figure	taggy.html#figure.t,string,	template figure(selector = ""; inner)		413
+nim	font	taggy.html#font.t,string,	template font(selector = ""; inner)		414
+nim	footer	taggy.html#footer.t,string,	template footer(selector = ""; inner)		415
+nim	form	taggy.html#form.t,string,	template form(selector = ""; inner)		416
+nim	frame	taggy.html#frame.t,string,	template frame(selector = ""; inner)		417
+nim	frameset	taggy.html#frameset.t,string,	template frameset(selector = ""; inner)		418
+nim	head	taggy.html#head.t,string,	template head(selector = ""; inner)		419
+nim	header	taggy.html#header.t,string,	template header(selector = ""; inner)		420
+nim	h1	taggy.html#h1.t,string,	template h1(selector = ""; inner)		421
+nim	h2	taggy.html#h2.t,string,	template h2(selector = ""; inner)		422
+nim	h3	taggy.html#h3.t,string,	template h3(selector = ""; inner)		423
+nim	h4	taggy.html#h4.t,string,	template h4(selector = ""; inner)		424
+nim	h5	taggy.html#h5.t,string,	template h5(selector = ""; inner)		425
+nim	h6	taggy.html#h6.t,string,	template h6(selector = ""; inner)		426
+nim	hr	taggy.html#hr.t,string,	template hr(selector = ""; inner)		427
+nim	html	taggy.html#html.t,string,	template html(selector = ""; inner)		428
+nim	i	taggy.html#i.t,string,	template i(selector = ""; inner)		429
+nim	iframe	taggy.html#iframe.t,string,	template iframe(selector = ""; inner)		430
+nim	img	taggy.html#img.t,string,	template img(selector = ""; inner)		431
+nim	input	taggy.html#input.t,string,	template input(selector = ""; inner)		432
+nim	ins	taggy.html#ins.t,string,	template ins(selector = ""; inner)		433
+nim	kbd	taggy.html#kbd.t,string,	template kbd(selector = ""; inner)		434
+nim	label	taggy.html#label.t,string,	template label(selector = ""; inner)		435
+nim	legend	taggy.html#legend.t,string,	template legend(selector = ""; inner)		436
+nim	li	taggy.html#li.t,string,	template li(selector = ""; inner)		437
+nim	link	taggy.html#link.t,string,	template link(selector = ""; inner)		438
+nim	main	taggy.html#main.t,string,	template main(selector = ""; inner)		439
+nim	map	taggy.html#map.t,string,	template map(selector = ""; inner)		440
+nim	mark	taggy.html#mark.t,string,	template mark(selector = ""; inner)		441
+nim	meta	taggy.html#meta.t,string,	template meta(selector = ""; inner)		442
+nim	meter	taggy.html#meter.t,string,	template meter(selector = ""; inner)		443
+nim	nav	taggy.html#nav.t,string,	template nav(selector = ""; inner)		444
+nim	noscript	taggy.html#noscript.t,string,	template noscript(selector = ""; inner)		445
+nim	tobject	taggy.html#tobject.t,string,	template tobject(selector = ""; inner)		446
+nim	ol	taggy.html#ol.t,string,	template ol(selector = ""; inner)		447
+nim	optgroup	taggy.html#optgroup.t,string,	template optgroup(selector = ""; inner)		448
+nim	option	taggy.html#option.t,string,	template option(selector = ""; inner)		449
+nim	p	taggy.html#p.t,string,	template p(selector = ""; inner)		450
+nim	param	taggy.html#param.t,string,	template param(selector = ""; inner)		451
+nim	pre	taggy.html#pre.t,string,	template pre(selector = ""; inner)		452
+nim	progress	taggy.html#progress.t,string,	template progress(selector = ""; inner)		453
+nim	q	taggy.html#q.t,string,	template q(selector = ""; inner)		454
+nim	s	taggy.html#s.t,string,	template s(selector = ""; inner)		455
+nim	samp	taggy.html#samp.t,string,	template samp(selector = ""; inner)		456
+nim	script	taggy.html#script.t,string,	template script(selector = ""; inner)		457
+nim	section	taggy.html#section.t,string,	template section(selector = ""; inner)		458
+nim	select	taggy.html#select.t,string,	template select(selector = ""; inner)		459
+nim	small	taggy.html#small.t,string,	template small(selector = ""; inner)		460
+nim	source	taggy.html#source.t,string,	template source(selector = ""; inner)		461
+nim	span	taggy.html#span.t,string,	template span(selector = ""; inner)		462
+nim	strike	taggy.html#strike.t,string,	template strike(selector = ""; inner)		463
+nim	strong	taggy.html#strong.t,string,	template strong(selector = ""; inner)		464
+nim	sub	taggy.html#sub.t,string,	template sub(selector = ""; inner)		465
+nim	sup	taggy.html#sup.t,string,	template sup(selector = ""; inner)		466
+nim	table	taggy.html#table.t,string,	template table(selector = ""; inner)		467
+nim	tbody	taggy.html#tbody.t,string,	template tbody(selector = ""; inner)		468
+nim	td	taggy.html#td.t,string,	template td(selector = ""; inner)		469
+nim	textarea	taggy.html#textarea.t,string,	template textarea(selector = ""; inner)		470
+nim	tfoot	taggy.html#tfoot.t,string,	template tfoot(selector = ""; inner)		471
+nim	th	taggy.html#th.t,string,	template th(selector = ""; inner)		472
+nim	thead	taggy.html#thead.t,string,	template thead(selector = ""; inner)		473
+nim	time	taggy.html#time.t,string,	template time(selector = ""; inner)		474
+nim	title	taggy.html#title.t,string,	template title(selector = ""; inner)		475
+nim	tr	taggy.html#tr.t,string,	template tr(selector = ""; inner)		476
+nim	u	taggy.html#u.t,string,	template u(selector = ""; inner)		477
+nim	ul	taggy.html#ul.t,string,	template ul(selector = ""; inner)		478
+nim	tvar	taggy.html#tvar.t,string,	template tvar(selector = ""; inner)		479
+nim	video	taggy.html#video.t,string,	template video(selector = ""; inner)		480
+nim	wbr	taggy.html#wbr.t,string,	template wbr(selector = ""; inner)		481
+nim	a	taggy.html#a.t	template a(inner)		483
+nim	abbr	taggy.html#abbr.t	template abbr(inner)		484
+nim	acronym	taggy.html#acronym.t	template acronym(inner)		485
+nim	address	taggy.html#address.t	template address(inner)		486
+nim	applet	taggy.html#applet.t	template applet(inner)		487
+nim	area	taggy.html#area.t	template area(inner)		488
+nim	article	taggy.html#article.t	template article(inner)		489
+nim	aside	taggy.html#aside.t	template aside(inner)		490
+nim	audio	taggy.html#audio.t	template audio(inner)		491
+nim	b	taggy.html#b.t	template b(inner)		492
+nim	base	taggy.html#base.t	template base(inner)		493
+nim	basefont	taggy.html#basefont.t	template basefont(inner)		494
+nim	bdo	taggy.html#bdo.t	template bdo(inner)		495
+nim	big	taggy.html#big.t	template big(inner)		496
+nim	blockquote	taggy.html#blockquote.t	template blockquote(inner)		497
+nim	body	taggy.html#body.t	template body(inner)		498
+nim	br	taggy.html#br.t	template br(inner)		499
+nim	button	taggy.html#button.t	template button(inner)		500
+nim	canvas	taggy.html#canvas.t	template canvas(inner)		501
+nim	caption	taggy.html#caption.t	template caption(inner)		502
+nim	center	taggy.html#center.t	template center(inner)		503
+nim	cite	taggy.html#cite.t	template cite(inner)		504
+nim	code	taggy.html#code.t	template code(inner)		505
+nim	col	taggy.html#col.t	template col(inner)		506
+nim	colgroup	taggy.html#colgroup.t	template colgroup(inner)		507
+nim	datalist	taggy.html#datalist.t	template datalist(inner)		508
+nim	dd	taggy.html#dd.t	template dd(inner)		509
+nim	del	taggy.html#del.t	template del(inner)		510
+nim	dfn	taggy.html#dfn.t	template dfn(inner)		511
+nim	tdiv	taggy.html#tdiv.t	template tdiv(inner)		512
+nim	dl	taggy.html#dl.t	template dl(inner)		513
+nim	dt	taggy.html#dt.t	template dt(inner)		514
+nim	em	taggy.html#em.t	template em(inner)		515
+nim	embed	taggy.html#embed.t	template embed(inner)		516
+nim	fieldset	taggy.html#fieldset.t	template fieldset(inner)		517
+nim	figcaption	taggy.html#figcaption.t	template figcaption(inner)		518
+nim	figure	taggy.html#figure.t	template figure(inner)		519
+nim	font	taggy.html#font.t	template font(inner)		520
+nim	footer	taggy.html#footer.t	template footer(inner)		521
+nim	form	taggy.html#form.t	template form(inner)		522
+nim	frame	taggy.html#frame.t	template frame(inner)		523
+nim	frameset	taggy.html#frameset.t	template frameset(inner)		524
+nim	head	taggy.html#head.t	template head(inner)		525
+nim	header	taggy.html#header.t	template header(inner)		526
+nim	h1	taggy.html#h1.t	template h1(inner)		527
+nim	h2	taggy.html#h2.t	template h2(inner)		528
+nim	h3	taggy.html#h3.t	template h3(inner)		529
+nim	h4	taggy.html#h4.t	template h4(inner)		530
+nim	h5	taggy.html#h5.t	template h5(inner)		531
+nim	h6	taggy.html#h6.t	template h6(inner)		532
+nim	hr	taggy.html#hr.t	template hr(inner)		533
+nim	html	taggy.html#html.t	template html(inner)		534
+nim	i	taggy.html#i.t	template i(inner)		535
+nim	iframe	taggy.html#iframe.t	template iframe(inner)		536
+nim	img	taggy.html#img.t	template img(inner)		537
+nim	input	taggy.html#input.t	template input(inner)		538
+nim	ins	taggy.html#ins.t	template ins(inner)		539
+nim	kbd	taggy.html#kbd.t	template kbd(inner)		540
+nim	label	taggy.html#label.t	template label(inner)		541
+nim	legend	taggy.html#legend.t	template legend(inner)		542
+nim	li	taggy.html#li.t	template li(inner)		543
+nim	link	taggy.html#link.t	template link(inner)		544
+nim	main	taggy.html#main.t	template main(inner)		545
+nim	map	taggy.html#map.t	template map(inner)		546
+nim	mark	taggy.html#mark.t	template mark(inner)		547
+nim	meta	taggy.html#meta.t	template meta(inner)		548
+nim	meter	taggy.html#meter.t	template meter(inner)		549
+nim	nav	taggy.html#nav.t	template nav(inner)		550
+nim	noscript	taggy.html#noscript.t	template noscript(inner)		551
+nim	tobject	taggy.html#tobject.t	template tobject(inner)		552
+nim	ol	taggy.html#ol.t	template ol(inner)		553
+nim	optgroup	taggy.html#optgroup.t	template optgroup(inner)		554
+nim	option	taggy.html#option.t	template option(inner)		555
+nim	p	taggy.html#p.t	template p(inner)		556
+nim	param	taggy.html#param.t	template param(inner)		557
+nim	pre	taggy.html#pre.t	template pre(inner)		558
+nim	progress	taggy.html#progress.t	template progress(inner)		559
+nim	q	taggy.html#q.t	template q(inner)		560
+nim	s	taggy.html#s.t	template s(inner)		561
+nim	samp	taggy.html#samp.t	template samp(inner)		562
+nim	script	taggy.html#script.t	template script(inner)		563
+nim	section	taggy.html#section.t	template section(inner)		564
+nim	select	taggy.html#select.t	template select(inner)		565
+nim	small	taggy.html#small.t	template small(inner)		566
+nim	source	taggy.html#source.t	template source(inner)		567
+nim	span	taggy.html#span.t	template span(inner)		568
+nim	strike	taggy.html#strike.t	template strike(inner)		569
+nim	strong	taggy.html#strong.t	template strong(inner)		570
+nim	sub	taggy.html#sub.t	template sub(inner)		571
+nim	sup	taggy.html#sup.t	template sup(inner)		572
+nim	table	taggy.html#table.t	template table(inner)		573
+nim	tbody	taggy.html#tbody.t	template tbody(inner)		574
+nim	td	taggy.html#td.t	template td(inner)		575
+nim	textarea	taggy.html#textarea.t	template textarea(inner)		576
+nim	tfoot	taggy.html#tfoot.t	template tfoot(inner)		577
+nim	th	taggy.html#th.t	template th(inner)		578
+nim	thead	taggy.html#thead.t	template thead(inner)		579
+nim	time	taggy.html#time.t	template time(inner)		580
+nim	title	taggy.html#title.t	template title(inner)		581
+nim	tr	taggy.html#tr.t	template tr(inner)		582
+nim	u	taggy.html#u.t	template u(inner)		583
+nim	ul	taggy.html#ul.t	template ul(inner)		584
+nim	tvar	taggy.html#tvar.t	template tvar(inner)		585
+nim	video	taggy.html#video.t	template video(inner)		586
+nim	wbr	taggy.html#wbr.t	template wbr(inner)		587
+nim	style	taggy.html#style.t	template style(inner)		589
+nim	attr	taggy.html#attr,string,string	proc attr(name, value: string)		596
+nim	accept	taggy.html#accept,string	proc accept(value: string)		599
+nim	acceptCharset	taggy.html#acceptCharset,string	proc acceptCharset(value: string)		600
+nim	accesskey	taggy.html#accesskey,string	proc accesskey(value: string)		601
+nim	action	taggy.html#action,string	proc action(value: string)		602
+nim	alt	taggy.html#alt,string	proc alt(value: string)		603
+nim	tasync	taggy.html#tasync,string	proc tasync(value: string)		604
+nim	autocomplete	taggy.html#autocomplete,string	proc autocomplete(value: string)		605
+nim	autofocus	taggy.html#autofocus,string	proc autofocus(value: string)		606
+nim	autoplay	taggy.html#autoplay,string	proc autoplay(value: string)		607
+nim	charset	taggy.html#charset,string	proc charset(value: string)		608
+nim	checked	taggy.html#checked,string	proc checked(value: string)		609
+nim	cite	taggy.html#cite,string	proc cite(value: string)		610
+nim	class	taggy.html#class,string	proc class(value: string)		611
+nim	cols	taggy.html#cols,string	proc cols(value: string)		612
+nim	colspan	taggy.html#colspan,string	proc colspan(value: string)		613
+nim	attrProperty	taggy.html#attrProperty,string	proc attrProperty(value: string)		614
+nim	attrContent	taggy.html#attrContent,string	proc attrContent(value: string)		615
+nim	contenteditable	taggy.html#contenteditable,string	proc contenteditable(value: string)		616
+nim	controls	taggy.html#controls,string	proc controls(value: string)		617
+nim	coords	taggy.html#coords,string	proc coords(value: string)		618
+nim	data	taggy.html#data,string	proc data(value: string)		619
+nim	datetime	taggy.html#datetime,string	proc datetime(value: string)		620
+nim	default	taggy.html#default,string	proc default(value: string)		621
+nim	tdefer	taggy.html#tdefer,string	proc tdefer(value: string)		622
+nim	dir	taggy.html#dir,string	proc dir(value: string)		623
+nim	dirname	taggy.html#dirname,string	proc dirname(value: string)		624
+nim	disabled	taggy.html#disabled,string	proc disabled(value: string)		625
+nim	download	taggy.html#download,string	proc download(value: string)		626
+nim	draggable	taggy.html#draggable,string	proc draggable(value: string)		627
+nim	enctype	taggy.html#enctype,string	proc enctype(value: string)		628
+nim	tfor	taggy.html#tfor,string	proc tfor(value: string)		629
+nim	form	taggy.html#form,string	proc form(value: string)		630
+nim	formaction	taggy.html#formaction,string	proc formaction(value: string)		631
+nim	headers	taggy.html#headers,string	proc headers(value: string)		632
+nim	attrHeight	taggy.html#attrHeight,string	proc attrHeight(value: string)		633
+nim	hidden	taggy.html#hidden,string	proc hidden(value: string)		634
+nim	high	taggy.html#high,string	proc high(value: string)		635
+nim	href	taggy.html#href,string	proc href(value: string)		636
+nim	hreflang	taggy.html#hreflang,string	proc hreflang(value: string)		637
+nim	httpEquiv	taggy.html#httpEquiv,string	proc httpEquiv(value: string)		638
+nim	id	taggy.html#id,string	proc id(value: string)		639
+nim	ismap	taggy.html#ismap,string	proc ismap(value: string)		640
+nim	kind	taggy.html#kind,string	proc kind(value: string)		641
+nim	label	taggy.html#label,string	proc label(value: string)		642
+nim	lang	taggy.html#lang,string	proc lang(value: string)		643
+nim	list	taggy.html#list,string	proc list(value: string)		644
+nim	loading	taggy.html#loading,string	proc loading(value: string)		645
+nim	loop	taggy.html#loop,string	proc loop(value: string)		646
+nim	low	taggy.html#low,string	proc low(value: string)		647
+nim	max	taggy.html#max,string	proc max(value: string)		648
+nim	maxlength	taggy.html#maxlength,string	proc maxlength(value: string)		649
+nim	media	taggy.html#media,string	proc media(value: string)		650
+nim	tmethod	taggy.html#tmethod,string	proc tmethod(value: string)		651
+nim	min	taggy.html#min,string	proc min(value: string)		652
+nim	multiple	taggy.html#multiple,string	proc multiple(value: string)		653
+nim	muted	taggy.html#muted,string	proc muted(value: string)		654
+nim	name	taggy.html#name,string	proc name(value: string)		655
+nim	novalidate	taggy.html#novalidate,string	proc novalidate(value: string)		656
+nim	open	taggy.html#open,string	proc open(value: string)		657
+nim	optimum	taggy.html#optimum,string	proc optimum(value: string)		658
+nim	pattern	taggy.html#pattern,string	proc pattern(value: string)		659
+nim	placeholder	taggy.html#placeholder,string	proc placeholder(value: string)		660
+nim	poster	taggy.html#poster,string	proc poster(value: string)		661
+nim	preload	taggy.html#preload,string	proc preload(value: string)		662
+nim	readonly	taggy.html#readonly,string	proc readonly(value: string)		663
+nim	rel	taggy.html#rel,string	proc rel(value: string)		664
+nim	required	taggy.html#required,string	proc required(value: string)		665
+nim	reversed	taggy.html#reversed,string	proc reversed(value: string)		666
+nim	role	taggy.html#role,string	proc role(value: string)		667
+nim	rows	taggy.html#rows,string	proc rows(value: string)		668
+nim	rowspan	taggy.html#rowspan,string	proc rowspan(value: string)		669
+nim	sandbox	taggy.html#sandbox,string	proc sandbox(value: string)		670
+nim	scope	taggy.html#scope,string	proc scope(value: string)		671
+nim	selected	taggy.html#selected,string	proc selected(value: string)		672
+nim	shape	taggy.html#shape,string	proc shape(value: string)		673
+nim	size	taggy.html#size,string	proc size(value: string)		674
+nim	sizes	taggy.html#sizes,string	proc sizes(value: string)		675
+nim	span	taggy.html#span,string	proc span(value: string)		676
+nim	spellcheck	taggy.html#spellcheck,string	proc spellcheck(value: string)		677
+nim	src	taggy.html#src,string	proc src(value: string)		678
+nim	srcdoc	taggy.html#srcdoc,string	proc srcdoc(value: string)		679
+nim	srclang	taggy.html#srclang,string	proc srclang(value: string)		680
+nim	srcset	taggy.html#srcset,string	proc srcset(value: string)		681
+nim	start	taggy.html#start,string	proc start(value: string)		682
+nim	step	taggy.html#step,string	proc step(value: string)		683
+nim	style	taggy.html#style,string	proc style(value: string)		684
+nim	tabindex	taggy.html#tabindex,string	proc tabindex(value: string)		685
+nim	tabindex	taggy.html#tabindex,SomeInteger	proc tabindex(value: SomeInteger)		686
+nim	target	taggy.html#target,string	proc target(value: string)		687
+nim	title	taggy.html#title,string	proc title(value: string)		688
+nim	translate	taggy.html#translate,string	proc translate(value: string)		689
+nim	ttype	taggy.html#ttype,string	proc ttype(value: string)		690
+nim	usemap	taggy.html#usemap,string	proc usemap(value: string)		691
+nim	value	taggy.html#value,string	proc value(value: string)		692
+nim	attrWidth	taggy.html#attrWidth,string	proc attrWidth(value: string)		693
+nim	wrap	taggy.html#wrap,string	proc wrap(value: string)		694
+nim	crossOrigin	taggy.html#crossOrigin,string	proc crossOrigin(value: string)		695
+nim	onabort	taggy.html#onabort,string	proc onabort(value: string)		697
+nim	onafterprint	taggy.html#onafterprint,string	proc onafterprint(value: string)		698
+nim	onbeforeprint	taggy.html#onbeforeprint,string	proc onbeforeprint(value: string)		699
+nim	onbeforeunload	taggy.html#onbeforeunload,string	proc onbeforeunload(value: string)		700
+nim	onblur	taggy.html#onblur,string	proc onblur(value: string)		701
+nim	oncanplay	taggy.html#oncanplay,string	proc oncanplay(value: string)		702
+nim	oncanplaythrough	taggy.html#oncanplaythrough,string	proc oncanplaythrough(value: string)		703
+nim	onchange	taggy.html#onchange,string	proc onchange(value: string)		704
+nim	onclick	taggy.html#onclick,string	proc onclick(value: string)		705
+nim	oncontextmenu	taggy.html#oncontextmenu,string	proc oncontextmenu(value: string)		706
+nim	oncopy	taggy.html#oncopy,string	proc oncopy(value: string)		707
+nim	oncuechange	taggy.html#oncuechange,string	proc oncuechange(value: string)		708
+nim	oncut	taggy.html#oncut,string	proc oncut(value: string)		709
+nim	ondblclick	taggy.html#ondblclick,string	proc ondblclick(value: string)		710
+nim	ondrag	taggy.html#ondrag,string	proc ondrag(value: string)		711
+nim	ondragend	taggy.html#ondragend,string	proc ondragend(value: string)		712
+nim	ondragenter	taggy.html#ondragenter,string	proc ondragenter(value: string)		713
+nim	ondragleave	taggy.html#ondragleave,string	proc ondragleave(value: string)		714
+nim	ondragover	taggy.html#ondragover,string	proc ondragover(value: string)		715
+nim	ondragstart	taggy.html#ondragstart,string	proc ondragstart(value: string)		716
+nim	ondrop	taggy.html#ondrop,string	proc ondrop(value: string)		717
+nim	ondurationchange	taggy.html#ondurationchange,string	proc ondurationchange(value: string)		718
+nim	onemptied	taggy.html#onemptied,string	proc onemptied(value: string)		719
+nim	onended	taggy.html#onended,string	proc onended(value: string)		720
+nim	onerror	taggy.html#onerror,string	proc onerror(value: string)		721
+nim	onfocus	taggy.html#onfocus,string	proc onfocus(value: string)		722
+nim	onhashchange	taggy.html#onhashchange,string	proc onhashchange(value: string)		723
+nim	oninput	taggy.html#oninput,string	proc oninput(value: string)		724
+nim	oninvalid	taggy.html#oninvalid,string	proc oninvalid(value: string)		725
+nim	onkeydown	taggy.html#onkeydown,string	proc onkeydown(value: string)		726
+nim	onkeypress	taggy.html#onkeypress,string	proc onkeypress(value: string)		727
+nim	onkeyup	taggy.html#onkeyup,string	proc onkeyup(value: string)		728
+nim	onload	taggy.html#onload,string	proc onload(value: string)		729
+nim	onloadeddata	taggy.html#onloadeddata,string	proc onloadeddata(value: string)		730
+nim	onloadedmetadata	taggy.html#onloadedmetadata,string	proc onloadedmetadata(value: string)		731
+nim	onloadstart	taggy.html#onloadstart,string	proc onloadstart(value: string)		732
+nim	onmousedown	taggy.html#onmousedown,string	proc onmousedown(value: string)		733
+nim	onmousemove	taggy.html#onmousemove,string	proc onmousemove(value: string)		734
+nim	onmouseout	taggy.html#onmouseout,string	proc onmouseout(value: string)		735
+nim	onmouseover	taggy.html#onmouseover,string	proc onmouseover(value: string)		736
+nim	onmouseup	taggy.html#onmouseup,string	proc onmouseup(value: string)		737
+nim	onmousewheel	taggy.html#onmousewheel,string	proc onmousewheel(value: string)		738
+nim	onoffline	taggy.html#onoffline,string	proc onoffline(value: string)		739
+nim	ononline	taggy.html#ononline,string	proc ononline(value: string)		740
+nim	onpagehide	taggy.html#onpagehide,string	proc onpagehide(value: string)		741
+nim	onpageshow	taggy.html#onpageshow,string	proc onpageshow(value: string)		742
+nim	onpaste	taggy.html#onpaste,string	proc onpaste(value: string)		743
+nim	onpause	taggy.html#onpause,string	proc onpause(value: string)		744
+nim	onplay	taggy.html#onplay,string	proc onplay(value: string)		745
+nim	onplaying	taggy.html#onplaying,string	proc onplaying(value: string)		746
+nim	onpopstate	taggy.html#onpopstate,string	proc onpopstate(value: string)		747
+nim	onprogress	taggy.html#onprogress,string	proc onprogress(value: string)		748
+nim	onratechange	taggy.html#onratechange,string	proc onratechange(value: string)		749
+nim	onreset	taggy.html#onreset,string	proc onreset(value: string)		750
+nim	onresize	taggy.html#onresize,string	proc onresize(value: string)		751
+nim	onscroll	taggy.html#onscroll,string	proc onscroll(value: string)		752
+nim	onsearch	taggy.html#onsearch,string	proc onsearch(value: string)		753
+nim	onseeked	taggy.html#onseeked,string	proc onseeked(value: string)		754
+nim	onseeking	taggy.html#onseeking,string	proc onseeking(value: string)		755
+nim	onselect	taggy.html#onselect,string	proc onselect(value: string)		756
+nim	onstalled	taggy.html#onstalled,string	proc onstalled(value: string)		757
+nim	onstorage	taggy.html#onstorage,string	proc onstorage(value: string)		758
+nim	onsubmit	taggy.html#onsubmit,string	proc onsubmit(value: string)		759
+nim	onsuspend	taggy.html#onsuspend,string	proc onsuspend(value: string)		760
+nim	ontimeupdate	taggy.html#ontimeupdate,string	proc ontimeupdate(value: string)		761
+nim	ontoggle	taggy.html#ontoggle,string	proc ontoggle(value: string)		762
+nim	onunload	taggy.html#onunload,string	proc onunload(value: string)		763
+nim	onvolumechange	taggy.html#onvolumechange,string	proc onvolumechange(value: string)		764
+nim	onwaiting	taggy.html#onwaiting,string	proc onwaiting(value: string)		765
+nim	onwheel	taggy.html#onwheel,string	proc onwheel(value: string)		766
+nim	render	taggy.html#render.t	template render(inner): string		768
+nim	renderFragment	taggy.html#renderFragment.t	template renderFragment(inner): string		776
+nimgrp	zindex	taggy.html#zIndex-procs-all	proc		332
+nimgrp	marginleft	taggy.html#marginLeft-procs-all	proc		223
+nimgrp	bottom	taggy.html#bottom-procs-all	proc		117
+nimgrp	marginbottom	taggy.html#marginBottom-procs-all	proc		221
+nimgrp	paddingleft	taggy.html#paddingLeft-procs-all	proc		271
+nimgrp	lineheight	taggy.html#lineHeight-procs-all	proc		209
+nimgrp	left	taggy.html#left-procs-all	proc		205
+nimgrp	fontsize	taggy.html#fontSize-procs-all	proc		161
+nimgrp	fontweight	taggy.html#fontWeight-procs-all	proc		175
+nimgrp	marginright	taggy.html#marginRight-procs-all	proc		225
+nimgrp	borderradius	taggy.html#borderRadius-procs-all	proc		102
+nimgrp	paddingtop	taggy.html#paddingTop-procs-all	proc		275
+nimgrp	top	taggy.html#top-procs-all	proc		310
+nimgrp	minwidth	taggy.html#minWidth-procs-all	proc		246
+nimgrp	paddingright	taggy.html#paddingRight-procs-all	proc		273
+nimgrp	height	taggy.html#height-procs-all	proc		198
+nimgrp	paddingbottom	taggy.html#paddingBottom-procs-all	proc		269
+nimgrp	gap	taggy.html#gap-procs-all	proc		177
+nimgrp	minheight	taggy.html#minHeight-procs-all	proc		244
+nimgrp	tabindex	taggy.html#tabindex-procs-all	proc		685
+nimgrp	opacity	taggy.html#opacity-procs-all	proc		251
+nimgrp	right	taggy.html#right-procs-all	proc		288
+nimgrp	maxheight	taggy.html#maxHeight-procs-all	proc		240
+nimgrp	margin	taggy.html#margin-procs-all	proc		217
+nimgrp	padding	taggy.html#padding-procs-all	proc		265
+nimgrp	width	taggy.html#width-procs-all	proc		326
+nimgrp	margintop	taggy.html#marginTop-procs-all	proc		227
+nimgrp	zoom	taggy.html#zoom-procs-all	proc		334
+nimgrp	maxwidth	taggy.html#maxWidth-procs-all	proc		242
+nimgrp	pre	taggy.html#pre-templates-all	template		452
+nimgrp	optgroup	taggy.html#optgroup-templates-all	template		448
+nimgrp	section	taggy.html#section-templates-all	template		458
+nimgrp	form	taggy.html#form-templates-all	template		416
+nimgrp	meta	taggy.html#meta-templates-all	template		442
+nimgrp	link	taggy.html#link-templates-all	template		438
+nimgrp	colgroup	taggy.html#colgroup-templates-all	template		401
+nimgrp	label	taggy.html#label-templates-all	template		435
+nimgrp	span	taggy.html#span-templates-all	template		462
+nimgrp	tbody	taggy.html#tbody-templates-all	template		468
+nimgrp	b	taggy.html#b-templates-all	template		386
+nimgrp	article	taggy.html#article-templates-all	template		383
+nimgrp	select	taggy.html#select-templates-all	template		459
+nimgrp	figure	taggy.html#figure-templates-all	template		413
+nimgrp	br	taggy.html#br-templates-all	template		393
+nimgrp	ol	taggy.html#ol-templates-all	template		447
+nimgrp	dl	taggy.html#dl-templates-all	template		407
+nimgrp	mark	taggy.html#mark-templates-all	template		441
+nimgrp	frameset	taggy.html#frameset-templates-all	template		418
+nimgrp	meter	taggy.html#meter-templates-all	template		443
+nimgrp	caption	taggy.html#caption-templates-all	template		396
+nimgrp	code	taggy.html#code-templates-all	template		399
+nimgrp	em	taggy.html#em-templates-all	template		409
+nimgrp	tfoot	taggy.html#tfoot-templates-all	template		471
+nimgrp	center	taggy.html#center-templates-all	template		397
+nimgrp	iframe	taggy.html#iframe-templates-all	template		430
+nimgrp	sup	taggy.html#sup-templates-all	template		466
+nimgrp	ul	taggy.html#ul-templates-all	template		478
+nimgrp	body	taggy.html#body-templates-all	template		392
+nimgrp	font	taggy.html#font-templates-all	template		414
+nimgrp	h3	taggy.html#h3-templates-all	template		423
+nimgrp	map	taggy.html#map-templates-all	template		440
+nimgrp	textarea	taggy.html#textarea-templates-all	template		470
+nimgrp	bdo	taggy.html#bdo-templates-all	template		389
+nimgrp	embed	taggy.html#embed-templates-all	template		410
+nimgrp	dd	taggy.html#dd-templates-all	template		403
+nimgrp	q	taggy.html#q-templates-all	template		454
+nimgrp	s	taggy.html#s-templates-all	template		455
+nimgrp	header	taggy.html#header-templates-all	template		420
+nimgrp	h1	taggy.html#h1-templates-all	template		421
+nimgrp	samp	taggy.html#samp-templates-all	template		456
+nimgrp	dfn	taggy.html#dfn-templates-all	template		405
+nimgrp	p	taggy.html#p-templates-all	template		450
+nimgrp	area	taggy.html#area-templates-all	template		382
+nimgrp	small	taggy.html#small-templates-all	template		460
+nimgrp	address	taggy.html#address-templates-all	template		380
+nimgrp	basefont	taggy.html#basefont-templates-all	template		388
+nimgrp	strong	taggy.html#strong-templates-all	template		464
+nimgrp	applet	taggy.html#applet-templates-all	template		381
+nimgrp	cite	taggy.html#cite-templates-all	template		398
+nimgrp	script	taggy.html#script-templates-all	template		457
+nimgrp	head	taggy.html#head-templates-all	template		419
+nimgrp	progress	taggy.html#progress-templates-all	template		453
+nimgrp	base	taggy.html#base-templates-all	template		387
+nimgrp	frame	taggy.html#frame-templates-all	template		417
+nimgrp	input	taggy.html#input-templates-all	template		432
+nimgrp	h6	taggy.html#h6-templates-all	template		426
+nimgrp	tr	taggy.html#tr-templates-all	template		476
+nimgrp	button	taggy.html#button-templates-all	template		394
+nimgrp	source	taggy.html#source-templates-all	template		461
+nimgrp	time	taggy.html#time-templates-all	template		474
+nimgrp	del	taggy.html#del-templates-all	template		404
+nimgrp	big	taggy.html#big-templates-all	template		390
+nimgrp	ins	taggy.html#ins-templates-all	template		433
+nimgrp	wbr	taggy.html#wbr-templates-all	template		481
+nimgrp	blockquote	taggy.html#blockquote-templates-all	template		391
+nimgrp	footer	taggy.html#footer-templates-all	template		415
+nimgrp	h2	taggy.html#h2-templates-all	template		422
+nimgrp	h5	taggy.html#h5-templates-all	template		425
+nimgrp	figcaption	taggy.html#figcaption-templates-all	template		412
+nimgrp	datalist	taggy.html#datalist-templates-all	template		402
+nimgrp	video	taggy.html#video-templates-all	template		480
+nimgrp	title	taggy.html#title-templates-all	template		475
+nimgrp	main	taggy.html#main-templates-all	template		439
+nimgrp	li	taggy.html#li-templates-all	template		437
+nimgrp	kbd	taggy.html#kbd-templates-all	template		434
+nimgrp	tdiv	taggy.html#tdiv-templates-all	template		406
+nimgrp	i	taggy.html#i-templates-all	template		429
+nimgrp	thead	taggy.html#thead-templates-all	template		473
+nimgrp	fieldset	taggy.html#fieldset-templates-all	template		411
+nimgrp	param	taggy.html#param-templates-all	template		451
+nimgrp	html	taggy.html#html-templates-all	template		428
+nimgrp	abbr	taggy.html#abbr-templates-all	template		378
+nimgrp	audio	taggy.html#audio-templates-all	template		385
+nimgrp	tvar	taggy.html#tvar-templates-all	template		479
+nimgrp	noscript	taggy.html#noscript-templates-all	template		445
+nimgrp	aside	taggy.html#aside-templates-all	template		384
+nimgrp	u	taggy.html#u-templates-all	template		477
+nimgrp	sub	taggy.html#sub-templates-all	template		465
+nimgrp	tobject	taggy.html#tobject-templates-all	template		446
+nimgrp	dt	taggy.html#dt-templates-all	template		408
+nimgrp	img	taggy.html#img-templates-all	template		431
+nimgrp	a	taggy.html#a-templates-all	template		377
+nimgrp	hr	taggy.html#hr-templates-all	template		427
+nimgrp	strike	taggy.html#strike-templates-all	template		463
+nimgrp	th	taggy.html#th-templates-all	template		472
+nimgrp	h4	taggy.html#h4-templates-all	template		424
+nimgrp	option	taggy.html#option-templates-all	template		449
+nimgrp	acronym	taggy.html#acronym-templates-all	template		379
+nimgrp	td	taggy.html#td-templates-all	template		469
+nimgrp	canvas	taggy.html#canvas-templates-all	template		395
+nimgrp	col	taggy.html#col-templates-all	template		400
+nimgrp	legend	taggy.html#legend-templates-all	template		436
+nimgrp	table	taggy.html#table-templates-all	template		467
+nimgrp	nav	taggy.html#nav-templates-all	template		444
