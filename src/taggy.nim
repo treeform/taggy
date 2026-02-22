@@ -4,47 +4,53 @@ export strutils
 proc escapeHtml*(s: string): string =
   xmltree.escape(s)
 
-var
-  sayStack {.threadvar.}: seq[string]
-  attrsStack {.threadvar.}: seq[string]
-  tagStyle {.threadvar.}: string
-  cssIdx {.threadvar.}: int
-  selectorStack {.threadvar.}: seq[string]
-  cssStack {.threadvar.}: seq[string]
+type
+  TaggyCtx = object
+    sayStack: seq[string]
+    attrsStack: seq[string]
+    tagStyle: string
+    cssIdx: int
+    selectorStack: seq[string]
+    cssStack: seq[string]
 
-proc resetStacks() =
-  sayStack = @[""]
-  attrsStack = @[""]
-  tagStyle = ""
-  cssIdx = 0
-  selectorStack = @[]
-  cssStack = @[""]
+var
+  taggyCtx {.threadvar.}: TaggyCtx
+
+proc newTaggyCtx(): TaggyCtx =
+  TaggyCtx(
+    sayStack: @[""],
+    attrsStack: @[""],
+    tagStyle: "",
+    cssIdx: 0,
+    selectorStack: @[],
+    cssStack: @[""]
+  )
 
 proc say*(s: string) =
-  sayStack[^1].add(s)
+  taggyCtx.sayStack[^1].add(s)
 
 proc sayCss*(s: string) =
-  cssStack[cssIdx].add(s)
+  taggyCtx.cssStack[taggyCtx.cssIdx].add(s)
 
 template styleSheet*(inner) =
-  cssStack = @[""]
+  taggyCtx.cssStack = @[""]
   say "<style>"
   inner
-  for cssBlock in cssStack:
+  for cssBlock in taggyCtx.cssStack:
     if cssBlock != "":
       say cssBlock
   say "</style>"
-  cssStack = @[""]
+  taggyCtx.cssStack = @[""]
 
 template css*(selector: string, inner) =
-  selectorStack.add selector
-  inc cssIdx
-  cssStack.add ""
-  sayCss selectorStack.join(" ").replace(" &", "") & " {"
+  taggyCtx.selectorStack.add selector
+  inc taggyCtx.cssIdx
+  taggyCtx.cssStack.add ""
+  sayCss taggyCtx.selectorStack.join(" ").replace(" &", "") & " {"
   inner
   sayCss "}\n"
-  dec cssIdx
-  discard selectorStack.pop()
+  dec taggyCtx.cssIdx
+  discard taggyCtx.selectorStack.pop()
 
 proc cssProp*(name, value: string) =
   sayCss name & ": " & value & ";"
@@ -354,18 +360,18 @@ proc parseSelector(selector: string) =
       what.add c
   use()
   if id != "":
-    attrsStack[^1].add " id=\"" & id & "\""
+    taggyCtx.attrsStack[^1].add " id=\"" & id & "\""
   if class != "":
-    attrsStack[^1].add " class=\"" & class & "\""
+    taggyCtx.attrsStack[^1].add " class=\"" & class & "\""
 
 template tag*(selector, name: string, inner) =
-  sayStack.add("")
-  attrsStack.add("")
+  taggyCtx.sayStack.add("")
+  taggyCtx.attrsStack.add("")
   parseSelector(selector)
   inner
-  let innerSay = sayStack.pop()
-  say "<" & name & attrsStack.pop() & ">"
-  sayStack[^1].add innerSay
+  let innerSay = taggyCtx.sayStack.pop()
+  say "<" & name & taggyCtx.attrsStack.pop() & ">"
+  taggyCtx.sayStack[^1].add innerSay
   say "</" & name & ">"
 
 template a*(selector = "", inner) = tag selector, "a", inner
@@ -581,14 +587,14 @@ template video*(inner) = tag "", "video", inner
 template wbr*(inner) = tag "", "wbr", inner
 
 template style*(inner) =
-  cssStack = @[""]
+  taggyCtx.cssStack = @[""]
   inner
-  tagStyle = strutils.splitWhitespace(cssStack[0]).join(" ")
-  attrsStack[^1].add " style=\"" & tagStyle & "\""
-  cssStack = @[""]
+  taggyCtx.tagStyle = strutils.splitWhitespace(taggyCtx.cssStack[0]).join(" ")
+  taggyCtx.attrsStack[^1].add " style=\"" & taggyCtx.tagStyle & "\""
+  taggyCtx.cssStack = @[""]
 
 proc attr*(name, value: string) =
-  attrsStack[^1].add " " & name & "=\"" & value & "\""
+  taggyCtx.attrsStack[^1].add " " & name & "=\"" & value & "\""
 
 proc accept*(value: string) = attr "accept", value
 proc acceptCharset*(value: string) = attr "acceptCharset", value
@@ -760,17 +766,17 @@ proc onwaiting*(value: string) = attr "onwaiting", value
 proc onwheel*(value: string) = attr "onwheel", value
 
 template render*(inner): string =
-  resetStacks()
+  taggyCtx = newTaggyCtx()
   inner
-  assert sayStack.len == 1
-  let r = sayStack[0]
-  sayStack[0] = ""
+  assert taggyCtx.sayStack.len == 1
+  let r = taggyCtx.sayStack[0]
+  taggyCtx.sayStack[0] = ""
   "<!DOCTYPE html>" & r
 
 template renderFragment*(inner): string =
-  resetStacks()
+  taggyCtx = newTaggyCtx()
   inner
-  assert sayStack.len == 1
-  let r = sayStack[0]
-  sayStack[0] = ""
+  assert taggyCtx.sayStack.len == 1
+  let r = taggyCtx.sayStack[0]
+  taggyCtx.sayStack[0] = ""
   r
